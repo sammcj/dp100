@@ -61,7 +61,7 @@ A list of possible future enhancements I might add:
 
 - [ ] Fix writing to the power supply
 - [ ] Read Only / Write mode button
-- [ ] Save and load settings
+- [ ] Save and load settings presets
 - [ ] Firmware update functionality (this might be hard)
 - [ ] Real-time graphing of voltage, current, power etc
 - [ ] A stream of data logging in the UI
@@ -78,7 +78,3 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 ## License
 
 MIT License
-
-## Acknowledgements
-
-This project uses cython, PyQt6 and hidapi for USB communication.
