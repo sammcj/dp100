@@ -53,6 +53,8 @@ EEVBlog did an intro and tear-down of the DP100 power supply:
 
 A list of possible future enhancements I might add:
 
+- [ ] Fix writing to the power supply
+- [ ] Read Only / Write mode button
 - [ ] Save and load settings
 - [ ] Real-time graphing of voltage, current, power etc
 - [ ] A stream of data logging in the UI
@@ -72,4 +74,4 @@ MIT License
 
 ## Acknowledgements
 
-This project uses the PyQt6 framework and hidapi for USB communication.
+This project uses cython, PyQt6 and hidapi for USB communication.
