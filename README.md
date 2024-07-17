@@ -56,6 +56,7 @@ A list of possible future enhancements I might add:
 - [ ] Fix writing to the power supply
 - [ ] Read Only / Write mode button
 - [ ] Save and load settings
+- [ ] Firmware update functionality (this might be hard)
 - [ ] Real-time graphing of voltage, current, power etc
 - [ ] A stream of data logging in the UI
 - [ ] Customisable data logging intervals
