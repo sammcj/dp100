@@ -1,0 +1,49 @@
+#include "types-and-globals.h"
+#include "helpers.h"
+
+_ABI(Microsoft_x86_64)
+void _function_0x402000_Code_x86_64(generic64_t _argument0, _union_31 *_argument1, generic64_t _argument2) {
+  generic32_t _var_0;
+  generic64_t _var_1;
+  generic64_t _var_2;
+  generic64_t _var_3;
+  generic64_t _var_4;
+  generic32_t _var_5;
+  generic64_t _var_6;
+  generic32_t _var_7;
+  generic32_t _var_8;
+  generic32_t _var_9;
+  generic64_t _var_10;
+  generic32_t _var_11;
+  generic32_t _var_12;
+  generic32_t _var_13;
+  generic64_t _var_14;
+  generic32_t _var_15;
+  generic32_t _var_16;
+  generic32_t _var_17;
+  generic64_t _var_18;
+  generic32_t _var_19;
+  generic32_t _var_20;
+  generic32_t _var_21;
+  generic64_t _var_22;
+  generic32_t _var_23;
+  generic32_t _var_24;
+  generic32_t _var_25;
+  generic64_t _var_26;
+  generic32_t _var_27;
+  generic32_t _var_28;
+  generic32_t _var_29;
+  generic64_t _var_30;
+  generic32_t _var_31;
+  generic32_t _var_32;
+  generic32_t _var_33;
+  generic32_t _var_34;
+  generic64_t _var_35;
+  generic32_t _var_36;
+  generic8_t _var_37;
+  *(generic8_t *) (*(generic8_t *) 137 - 'w') = *(generic8_t *) (*(generic8_t *) 137 - 'w') + ((number8_t) (*(generic8_t *) 137 - 'w') << '\001') + (*(generic8_t *) 137 - 'w');
+  _argument1->_member0 = _argument1->_member0 + (*(generic8_t *) 137 - 'w');
+  *(generic8_t *) 19338259 = *(generic8_t *) 19338259 + (*(generic8_t *) 137 - 'w');
+  _helper_lret_protected_wrapper(NULL, 1, 0, (pointer_or_number64_t) &_segment_0x402000_Code_x86_64_158208 + 21, _argument2, (uint64_t) (*(generic8_t *) 137 - 'w'), _undef_generic64_t(), _undef_generic64_t(), _argument0, _undef_generic64_t(), (number64_t) _argument1 & 0xFFFFFFFFFFFFFF00, _undef_generic64_t(), __init_local_sp(), 4294967295, 0, 0, 514, 4243635, 0, 0, 0, 0, 15727360, 0, 13628160, 0, 0, 0, 0, 0, 0, 0, 0, 65535, 274877906944, 127, 2147549185, 0, 0, 0, 4294967295, &_var_0, &_var_1, &_var_2, &_var_3, &_var_4, &_var_5, &_var_6, &_var_7, &_var_8, &_var_9, &_var_10, &_var_11, &_var_12, &_var_13, &_var_14, &_var_15, &_var_16, &_var_17, &_var_18, &_var_19, &_var_20, &_var_21, &_var_22, &_var_23, &_var_24, &_var_25, &_var_26, &_var_27, &_var_28, &_var_29, &_var_30, &_var_31, &_var_32, &_var_33, &_var_34, &_var_35, &_var_36, &_var_37);
+}
+

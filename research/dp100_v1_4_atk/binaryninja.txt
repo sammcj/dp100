@@ -1,0 +1,3582 @@
+int32_t sub_fc()
+{
+    /* undefined */;
+}
+
+int32_t sub_318(void* arg1, int32_t, int32_t arg3, void* arg4, void* arg5, int64_t @ fa0, int64_t @ fa1, int64_t arg8 @ fa2, int64_t @ fa3, int64_t @ fa4, int32_t arg11 @ fa5, void* arg12 @ s0, int64_t arg13 @ fs0)
+{
+    int32_t fa2 = *(arg4 + 0x38);
+    arg_0 = 0;  {  // {"ATK-DP100"}}
+    *(arg1 + 0x18) = arg13;
+    *(arg12 + 0x40) = fa2;
+    arg_4c = &arg_34;
+    int32_t fa2_1 = *(arg12 + 0x20);
+    void* a0 = *(arg5 + 0x28);
+    *(a0 + 0x18) = arg13;
+    *(arg12 + 0x48) = arg13;
+    *(arg4 + 0x38) = fa2_1;
+    void* a2 = *(a0 + 0x28);
+    *(arg12 + 0x40) = arg13;
+    *(a2 + 0x78) = arg11;
+    /* undefined */;
+}
+
+int32_t sub_354(int32_t arg1, int32_t arg2, int32_t arg3, int32_t, int32_t, int32_t, int32_t arg7, int32_t arg8, int32_t arg9, int64_t arg10)
+{
+    if (arg3 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    if (arg2 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    uint32_t tp;
+    _csrrw(tp);
+    /* undefined */;
+}
+
+int32_t sub_362(int32_t arg1, int32_t, int32_t, int32_t arg4, int32_t, void* arg6, void* arg7 @ s0, void* arg8 @ s1, int32_t arg9)
+{
+    *(arg7 + 0x48) = arg7;
+    sub_9dc();
+    *(arg6 + 8) = &arg_264;
+    arg_28 = arg1;
+    *(arg7 + 0x10) = &arg_264;
+    *(arg8 + 0x2c) = &arg_264;
+    /* undefined */;
+}
+
+int32_t sub_3e2()
+{
+    /* undefined */;
+}
+
+int32_t sub_3ee(int32_t arg1)
+{
+    /* undefined */;
+}
+
+int32_t sub_562(int32_t arg1, int32_t, int32_t, void* arg4, void* arg5 @ s0, void* arg6 @ s1, int32_t arg7 @ s11)
+{
+    arg_e8 = arg1;
+
+    if (arg6 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *(arg6 + 0x4c) = *(arg4 + 0xb8);
+    *(arg5 + 0x48) = arg5;
+    sub_9dc();
+    arg_22c = &arg_264;
+    arg_28 = arg1;
+    *(arg5 + 0x10) = &arg_264;
+    arg_1e0 = &arg_264;
+    /* undefined */;
+}
+
+int32_t j_sub_fc()
+{
+    /* tailcall */
+    return sub_fc();
+}
+
+int32_t sub_63e()
+{
+    /* tailcall */
+    return sub_3e2();
+}
+
+int32_t sub_662()
+{
+    /* tailcall */
+    return sub_3ee();
+}
+
+int32_t sub_6e4()
+{
+    /* undefined */;
+}
+
+int32_t sub_80c(int32_t arg1, void* arg2, int32_t, void* arg4, void* arg5, int64_t @ fa0, int64_t @ fa1, int32_t arg8 @ fa2, void* arg9 @ s0, int32_t arg10 @ s1)
+{
+    void* ra;
+    *(ra - 0x100);
+
+    if (arg1 == 0)  {  // {"ATK-DP100"}}
+    {
+        *(arg5 + 0x10) = arg8;
+        /* undefined */;
+    }
+
+    if (arg10 != 0)  {  // {"ATK-DP100"}}
+    {
+        *(arg9 + 0x24) = arg9;
+        /* undefined */;
+    }
+
+    *(arg4 + 0xa8) = *(arg2 + 0x74);
+    /* undefined */;
+}
+
+int32_t sub_80e(int32_t arg1, void* arg2, int32_t, void* arg4, void* arg5, int64_t @ fa0, int64_t @ fa1, int32_t arg8 @ fa2, void* arg9 @ s0, int32_t arg10 @ s1, int32_t arg11 @ fs0)
+{
+    *(arg9 + 0x20) = arg11;
+
+    if (arg1 == 0)  {  // {"ATK-DP100"}}
+    {
+        *(arg5 + 0x10) = arg8;
+        /* undefined */;
+    }
+
+    if (arg10 != 0)  {  // {"ATK-DP100"}}
+    {
+        *(arg9 + 0x24) = arg9;
+        /* undefined */;
+    }
+
+    *(arg4 + 0xa8) = *(arg2 + 0x74);
+    /* undefined */;
+}
+
+int32_t sub_816(void* arg1 @ s0)
+{
+    *(arg1 + 8);
+    /* tailcall */
+    return sub_81a();
+}
+
+int32_t sub_81a()
+{
+    /* undefined */;
+}
+
+int32_t sub_870()
+{
+    /* undefined */;
+}
+
+int32_t sub_908()
+{
+    /* undefined */;
+}
+
+int32_t sub_9dc()
+{
+    /* undefined */;
+}
+
+int32_t sub_b1c(void* arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5, void* arg6, int32_t arg7, void* arg8 @ s1, int32_t arg9, int32_t arg10)
+{
+    *(arg1 + 0x28);
+    sub_354();
+    *(arg8 + 0x4c) = arg1;
+    *(arg6 + 0x20);
+
+    if (arg4 != 0)  {  // {"ATK-DP100"}}
+    {
+        int32_t s4;
+        /* tailcall */
+        return sub_ddc(s4, arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    *(arg8 + 0x5c) = arg2;
+    /* undefined */;
+}
+
+int32_t sub_b46(int32_t* arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t, int32_t arg6, int32_t, int32_t arg8, int64_t arg9 @ fa0, int64_t arg10 @ fa1, int32_t arg11 @ fa2, void* arg12 @ s1)
+{
+    if (arg2 != 0)  {  // {"ATK-DP100"}}
+    {
+        arg1[0x10] = arg11;
+        *(arg12 + 0x64) = arg11;
+        int32_t fa2 = *(arg1[0x19] + 0xe8);
+        *arg1 = fa2;
+        *(arg12 + 0x64) = fa2;
+        arg1[0x19];
+        sub_6e4();
+        int32_t t1;
+        int32_t s6;
+        /* tailcall */
+        return sub_b60(arg1, arg2, arg9, arg10, fa2, t1, s6);
+    }
+
+    if (arg6 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    if (arg4 != 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_ddc();
+
+    *(arg12 + 0x5c) = arg2;
+    /* undefined */;
+}
+
+int32_t sub_b60(void* arg1, int32_t arg2, int64_t @ fa0, int64_t @ fa1, int32_t arg5 @ fa2, int32_t arg6 @ t1, int32_t arg7 @ s6)
+{
+    if (arg2 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *(arg1 + 0x74);
+    *(arg1 + 0x48) = arg5;
+    /* undefined */;
+}
+
+int32_t sub_c5c(int32_t arg1, int32_t arg2 @ s3, int32_t arg3 @ s10, int32_t arg4)
+{
+    int32_t s2;
+    /* tailcall */
+    return sub_c64(s2, (arg2 << 0x1a), (arg3 + arg1));
+}
+
+int32_t sub_c64(int32_t arg1 @ s2, int32_t arg2 @ s3, int32_t arg3 @ s10)
+{
+    sub_c6a(arg1, arg2);
+    int32_t s4;
+    sub_c74(s4);
+    /* undefined */;
+}
+
+int32_t sub_c6a(int32_t arg1 @ s2, int32_t arg2 @ s3)
+{
+    int32_t s4;
+    sub_c74(s4);
+    /* undefined */;
+}
+
+int32_t sub_c74(int32_t arg1 @ s4)
+{
+    /* undefined */;
+}
+
+int32_t sub_ca4(int32_t arg1 @ s3)
+{
+    _csrrc(0xd17, arg1);
+    /* tailcall */
+    return sub_870();
+}
+
+int32_t sub_d1c(int32_t arg1, int32_t, int32_t, int32_t arg4, int64_t* arg5, int32_t, int32_t, int32_t arg8, int32_t arg9 @ t1, void* arg10 @ s1, double arg11 @ ft0, double arg12 @ ft4, double arg13 @ ft6, int64_t arg14, int32_t arg15)
+{
+    *(arg10 + 0x60);
+    _fsgnj_d(arg13, arg12);
+    double fs0 = *arg5;
+    double ft4_1 = _fmul_d_rdn(_fmul_d_rdn(arg13, arg11), arg11);
+    _fmul_d_rdn(_fmul_d_rdn(arg13, fs0), fs0);
+    arg_20 = ft4_1;
+    /* undefined */;
+}
+
+int32_t sub_d46(void* arg1)
+{
+    *(arg1 + 0xf0);
+    /* undefined */;
+}
+
+int32_t sub_d50(int64_t* arg1, int32_t, int32_t arg3, int32_t, int32_t, void* arg6, int64_t @ fa0, int64_t @ fa1, int64_t @ fa2, int64_t @ fa3, int64_t arg11 @ fa4)
+{
+    *(arg6 + 0x18) = arg11;
+    int32_t s0;
+    /* tailcall */
+    return sub_ef2(arg1, s0);
+}
+
+int32_t sub_d86(int32_t, int32_t, int32_t arg3, int32_t, int32_t, void* arg6)
+{
+    *(arg6 + 0x4c) = arg3;
+    /* undefined */;
+}
+
+int32_t sub_ddc(int32_t arg1 @ s4, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5, int32_t arg6, int32_t arg7)
+{
+    /* undefined */;
+}
+
+int32_t sub_ea4(int32_t arg1, int32_t arg2, int32_t arg3, void* arg4, int64_t arg5 @ fa0, int64_t arg6 @ fa1, void* arg7 @ s1, int32_t arg8 @ fs1)
+{
+    *(arg4 + 0x14) = arg8;
+    *(arg7 + 0x78) = arg6;
+    void* s0;
+    /* tailcall */
+    return sub_816(s0);
+}
+
+int32_t sub_ec2(int32_t arg1, void* arg2, int32_t arg3, void* arg4, void* arg5, int64_t arg6 @ fa0, int64_t arg7 @ fa1, int32_t arg8 @ fa2, int64_t @ fa3, int64_t arg10 @ fa4, int32_t arg11 @ fa5, void* arg12 @ s1, int32_t arg13 @ s6)
+{
+    int64_t* a0 = *(arg12 + 0x78);
+    *(arg12 + 0x18) = arg11;
+    *((arg12 ^ arg2) + 0x78) = arg7;
+    int32_t fa5 = *(arg2 + 0x20);
+
+    if (arg2 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *0xfffeb058 = 0xfffeb000;
+    *(arg5 + 0x50) = fa5;
+    *0xfffeb058 = arg7;
+    *0xfffeb010 = arg10;
+    void* s0_1 = *(arg5 + 8);
+    sub_12de();
+    sub_80c(a0, arg2, arg3, arg4, arg5, arg6, arg7, arg8, s0_1, *(arg5 + 0x10));
+    /* tailcall */
+    return sub_ef2(a0, s0_1);
+}
+
+int32_t sub_ef2(int64_t* arg1, int32_t arg2 @ s0)
+{
+    arg1[4] = arg2;  {  // {"DP100"}}
+    *arg1;
+    *arg1;
+    /* tailcall */
+    return sub_908();
+}
+
+int32_t j_sub_80e(int32_t arg1, void* arg2, int32_t arg3, void* arg4, void* arg5, int64_t arg6 @ fa0, int64_t arg7 @ fa1, int32_t arg8 @ fa2, void* arg9 @ s0, int32_t arg10 @ s1, int32_t arg11 @ fs0)
+{
+    /* tailcall */
+    return sub_80e(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11);
+}
+
+int32_t j_sub_81a()
+{
+    /* tailcall */
+    return sub_81a();
+}
+
+int32_t sub_fb0(int64_t* arg1, int32_t arg2, void* arg3, void* arg4, void* arg5, int32_t arg6, int64_t @ fa0, int64_t @ fa1, int32_t arg9 @ fa2, int64_t arg10 @ fa3, int64_t arg11 @ fa4, void* arg12, int32_t arg13, int64_t arg14, int32_t arg15, int32_t arg16, int32_t arg17, int32_t arg18)
+{
+    *(arg5 + 0xe8) = arg11;
+
+    if (arg2 != 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_d1c();
+
+    int32_t s0;
+    arg_24 = s0;
+
+    if (arg4 == 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_ef2(arg1, s0);
+
+    *(arg12 - 0x2e0);
+    void* tp;
+    uint32_t t1_1 = *(tp - 0x60b);
+    arg13 = s0;
+    *(arg3 + 0x40);
+    sub_13f0(arg1);
+    sub_1104(arg1, arg2, arg3, arg4, t1_1, arg5, arg6);
+    *(*(arg4 + 0x54) + 0xd0);
+    /* undefined */;
+}
+
+int32_t sub_fbc(int64_t* arg1, int32_t arg2, void* arg3, void* arg4, void* arg5, void* arg6, int64_t arg7 @ fa0, int64_t arg8 @ fa1, int64_t arg9 @ fa2, int32_t arg10 @ fa3, int32_t arg11 @ fa4, int64_t arg12 @ fa5, int32_t arg13 @ fa6, void* arg14 @ s0, void* arg15 @ s1, double arg16 @ ft4, void* arg17, int32_t arg18, int32_t arg19, int64_t arg20, int32_t arg21, int32_t arg22, int32_t arg23, int32_t arg24, int32_t arg25, int32_t arg26)
+{
+    if (arg2 == 0)  {  // {"ATK-DP100"}}
+    {
+        *(arg3 + 0x40);
+        int32_t s0 = *(arg5 + 0x40);
+        _fsub_d_rmm(_fmul_d_rmm(arg16, arg13), arg13);
+        arg_24 = s0;
+
+        if (arg4 == 0)  {  // {"ATK-DP100"}}
+            /* tailcall */
+            return sub_ef2(arg1, s0);
+
+        *(arg17 - 0x2e0);
+        void* tp;
+        uint32_t t1_2 = *(tp - 0x60b);
+        arg18 = s0;
+        *(arg3 + 0x40);
+        sub_13f0(arg1);
+        sub_1104(arg1, arg2, arg3, arg4, t1_2, arg5, arg6);
+        *(*(arg4 + 0x54) + 0xd0);
+        /* undefined */;
+    }
+
+    arg_2c = arg10;
+    *(arg6 + 8) = &arg_3c0;
+    int32_t* a0 = *(arg3 + 0x10);
+    int32_t fa2_1 = *(arg3 + 0x78);
+    *(arg14 + 0xc0);
+    *0xfffffe12;
+    a0[0x1c] = arg14;
+    arg_e4 = arg13;
+    *(arg14 + 0x54);
+    *(arg15 + 0x20);
+    int32_t t1;
+    int32_t s6;
+
+    if (a0 != 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_b60(a0, arg2, arg7, arg8, fa2_1, t1, s6);
+
+    if (a0 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *a0 = arg15;
+    *(arg4 + 0x30);
+    *(arg14 + 0x20);
+    *(arg3 + 0x78);
+    *(arg14 + 0x54);
+    *(arg14 + 0xc0);
+    *0xfffffe12;
+    *(arg14 + 0x14);
+    /* undefined */;
+}
+
+int32_t sub_1082(void* arg1, int32_t arg2, void* arg3 @ s0)
+{
+    int32_t t1;
+    int32_t s6;
+    int64_t fa1;
+    int32_t fa2;
+    /* tailcall */
+    return sub_b60(arg1, arg2, *(arg3 + 0x40), fa1, fa2, t1, s6);
+}
+
+int32_t sub_1086(void* arg1, int32_t arg2 @ s2)
+{
+    *(arg1 + 0x28);
+
+    while (arg1 != 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    int32_t a1;
+    int32_t a2;
+    int32_t a3;
+    int32_t a4;
+    void* a5;
+    float ft0;
+    float ft4;
+    int64_t fs0;
+    sub_148c(arg1, a1, a2, a3, a4, a5, ft0, ft4, fs0);
+    int32_t t1;
+    int32_t s6;
+    int64_t fa0;
+    int64_t fa1;
+    int32_t fa2;
+    /* tailcall */
+    return sub_b60(arg1, a1, fa0, fa1, fa2, t1, s6);
+}
+
+int32_t sub_10d6(void* arg1 @ s0, void* arg2 @ s1, int32_t arg3 @ s4, int32_t arg4)
+{
+    *(arg1 + 0x44);
+
+    if (0 != arg3)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *(arg2 + 0x70);
+    /* undefined */;
+}
+
+int32_t sub_1104(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5 @ t1, int32_t arg6, int32_t arg7)
+{
+    if (arg3 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    arg_3c = arg2;
+    /* undefined */;
+}
+
+int32_t sub_11ae()
+{
+    /* undefined */;
+}
+
+int32_t sub_12de()
+{
+    /* undefined */;
+}
+
+int32_t sub_1382(int32_t, int32_t, void* arg3)
+{
+    *(arg3 + 0xd8);
+    int32_t s2;
+    int32_t s3;
+    int32_t s10;
+    /* tailcall */
+    return sub_c64(s2, s3, s10);
+}
+
+int32_t j_sub_c5c(int32_t arg1, int32_t arg4)
+{
+    int32_t arg2;
+    int32_t arg3;
+    /* tailcall */
+    return sub_c5c(arg1, arg2, arg3, arg4);
+}
+
+int32_t sub_13f0(int32_t arg1)
+{
+    /* undefined */;
+}
+
+int32_t sub_1440(void* arg1 @ s1, int32_t arg2 @ fs0)
+{
+    *(arg1 + 0x60) = arg2;
+    /* tailcall */
+    return sub_10d6();
+}
+
+int32_t sub_148c(void* arg1, int32_t arg2, int32_t arg3, int32_t, int32_t, void* arg6, float arg7 @ ft0, float arg8 @ ft4, int64_t arg9 @ fs0)
+{
+    *(arg1 + 0xe8);
+    *(arg6 + 0xb8) = arg9;
+    _fsub_s_rtz(-(_fmul_s_rtz(arg7, arg8)), arg8);
+    /* undefined */;
+}
+
+int32_t j_sub_fbc(int64_t* arg1, int32_t arg2, void* arg3, void* arg4, void* arg5, void* arg6, void* arg17, int32_t arg18, int64_t arg7 @ fa0, int64_t arg8 @ fa1, int64_t arg9 @ fa2, int32_t arg10 @ fa3, int32_t arg11 @ fa4, int64_t arg12 @ fa5, int32_t arg13 @ fa6, int32_t arg19, int64_t arg20, int32_t arg21, int32_t arg22, int32_t arg23, int32_t arg24, int32_t arg25, int32_t arg26)
+{
+    void* arg14;
+    void* arg15;
+    double arg16;
+    /* tailcall */
+    return sub_fbc(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19, arg20, arg21, arg22, arg23, arg24, arg25, arg26);
+}
+
+int32_t sub_14e2(void* arg1, int32_t, int32_t, int32_t, void* arg5, int32_t arg6 @ s0)
+{
+    *(arg5 + 0x38) = arg6;
+    /* tailcall */
+    return sub_d46(arg1);
+}
+
+int32_t sub_14f0(int32_t, void* arg2, int32_t, int32_t, int32_t, void* arg6, int64_t @ fa0, int64_t @ fa1, int64_t arg9 @ fa2, int32_t arg10 @ s0)
+{
+    *(arg6 + 0x18) = arg10;
+    *(arg2 + 0x20) = arg9;
+    sub_15f4();
+    /* tailcall */
+    return sub_11ae();
+}
+
+int32_t sub_14f8(int32_t arg1, int32_t arg2, void* arg3, void* arg4, int32_t arg5, void* arg6, int64_t arg7 @ fa0, int64_t arg8 @ fa1, int64_t arg9 @ fa2, int64_t arg10 @ fa3, int64_t arg11 @ fa4, int64_t arg12 @ fa5, int32_t arg13 @ t0, void* arg14 @ s0, void* arg15 @ s1, int32_t arg16 @ s2, int64_t arg17, int32_t arg18, int32_t arg19, int32_t arg20, int64_t arg21)
+{
+    int32_t s5;
+    sub_15c0(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg14, arg15, arg16, s5);
+    int32_t gp;
+
+    if (gp != arg2)
+    {
+        *(arg4 + 0xe8);
+        /* undefined */;
+    }
+
+    sub_d86(arg1, arg2, arg3, arg4, arg5, arg6);
+    arg_40 = arg10;
+    *(arg6 + 8) = &arg_3d4;
+    void** a0 = *(arg3 + 0x10);
+    int32_t fa2 = *(arg3 + 0x78);
+    *(arg14 + 0xc0);
+    *0xfffffe12;
+    a0[0x1c] = arg14;
+    int32_t fa6;
+    arg_f8 = fa6;
+    *(arg14 + 0x54);
+    *(arg15 + 0x20);
+    int32_t t1;
+    int32_t s6;
+
+    if (a0 != 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_b60(a0, arg2, arg7, arg8, fa2, t1, s6);
+
+    if (a0 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *a0 = arg15;
+    *((&arg_80 >> 0x21) + 0x30);
+    *(arg14 + 0x20);
+    *(arg3 + 0x78);
+    *(arg14 + 0x54);
+    *(arg14 + 0xc0);
+    *0xfffffe12;
+    *(arg14 + 0x14);
+    /* undefined */;
+}
+
+int32_t sub_151e(int32_t arg1, void* arg2, void* arg3, int32_t arg4, int32_t arg5, void* arg6, int64_t @ fa0, int64_t @ fa1, int64_t arg9 @ fa2, int64_t arg10 @ fa3, int64_t arg11 @ fa4, void* arg12 @ s0, int64_t* arg13 @ s1)
+{
+    uint32_t ra;
+    void* sp_1 = _csrrw(ra);
+
+    if (arg4 != 0)  {  // {"ATK-DP100"}}
+    {
+        *(*(arg3 + 0x7c) + 0x28);
+        *(sp_1 + 0x158);
+        /* undefined */;
+    }
+
+    uint32_t gp;
+    _csrrw(gp);
+
+    if (arg2 == 0)  {  // {"ATK-DP100"}}
+    {
+        *(sp_1 + 0x88);
+        /* undefined */;
+    }
+
+    int64_t fs0 = arg13[5];  {  // {"P100"}}
+    *(arg12 + 0xa0) = fs0;
+    *arg13 = arg9;
+    *(arg6 + 0x38) = fs0;
+    *(arg6 + 0x18);
+    *(arg2 + 0x20) = arg11;
+    *(arg12 + 0x50);
+    /* undefined */;
+}
+
+int32_t sub_1534(int64_t* arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5, void* arg6, int64_t arg7 @ fa0, int64_t arg8 @ fa1, void* arg9 @ s0)
+{
+    int64_t fa2 = *(arg9 + 0x34);
+    sub_1564();
+    int64_t fa3;
+    int64_t fa4;
+    /* tailcall */
+    return sub_d50(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, fa2, fa3, fa4);
+}
+
+int32_t j_sub_d46(void* arg1)
+{
+    /* tailcall */
+    return sub_d46(arg1);
+}
+
+int32_t sub_1564()
+{
+    /* tailcall */
+    return sub_11ae();
+}
+
+int32_t sub_1590(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5, void* arg6, int64_t arg7 @ fa0, int64_t arg8 @ fa1, int64_t arg9 @ fa2, int64_t arg10 @ fa3, int64_t arg11 @ fa4, int64_t arg12 @ fa5, void* arg13 @ s0, void* arg14 @ s1, int32_t arg15 @ s2, int32_t arg16 @ s5)
+{
+    *(arg13 + 0x88);
+    *(arg14 + 0x18) = arg12;
+    *(arg14 + 0xf8) = arg12;
+    *(arg13 + 0xd8) = arg12;
+    *(arg13 + 0xf8) = arg12;
+    int64_t fa1 = *(arg13 + 4);  {  // {"DP100"}}
+    *(arg6 + 0x80) = arg7;
+    *(*(arg13 + 0x58) + 0x6c) = arg7;
+    /* tailcall */
+    return sub_15c0((((((arg1 + 0xc) & arg4) >> 0x16) & arg4) >> 6), 0xf000, arg3, arg4, arg5, arg6, arg7, fa1, arg9, arg10, arg11, arg12, arg13, &arg_288, (arg15 - 0x16), (arg16 + 0x19));
+}
+
+int32_t sub_15c0(int32_t arg1, int32_t arg2, int32_t, int32_t arg4, int32_t arg5, int32_t arg6, int64_t @ fa0, int64_t arg8 @ fa1, int64_t @ fa2, int64_t @ fa3, int64_t @ fa4, int64_t arg12 @ fa5, void* arg13 @ s0, void* arg14 @ s1, int32_t arg15 @ s2, int32_t arg16 @ s5)
+{
+    if (arg14 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *(arg14 + 0x18) = arg12;
+    *(arg14 + 0xf8) = arg12;
+    data_f01c = arg6;
+    *(arg13 + 0x88);
+    *(arg13 + 0xd8) = arg12;
+    *(arg13 + 0x78) = arg12;
+    *(arg13 + 0x3c);
+    /* undefined */;
+}
+
+int32_t sub_15f4(int64_t arg1)
+{
+    /* undefined */;
+}
+
+int32_t sub_18c2(int32_t, int32_t arg2, int32_t arg3, int32_t arg4, int32_t, int32_t arg6, int32_t, int32_t arg8, void* arg9 @ s0, void* arg10 @ s1, int32_t arg11 @ t3, int32_t arg12 @ t4, int32_t arg13 @ fs0, int32_t arg14, int64_t arg15, int64_t arg16, int64_t arg17)
+{
+    *(arg9 + 0x48) = arg4;
+
+    if (arg8 != arg6)
+    {
+        if (arg6 != 0)  {  // {"ATK-DP100"}}
+            /* undefined */;
+
+        /* undefined */;
+    }
+
+    if (arg2 == 0)  {  // {"ATK-DP100"}}
+    {
+        *(arg9 + 0x20) = arg13;
+        int32_t fa7;
+        arg_b8 = fa7;
+        *(arg9 + 0x40);
+        *(arg9 + 0x20) = arg13;
+        /* undefined */;
+    }
+
+    if (arg3 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    if (arg2 == 0xffffffe3)
+    {
+        *(arg10 + 0x38);
+        /* undefined */;
+    }
+
+    if (arg2 == 0xffffffc6)
+        /* undefined */;
+
+    /* undefined */;
+}
+
+int32_t sub_1962(void* arg1, int32_t arg2, int64_t arg3 @ fa0, int64_t arg4 @ fa1, int32_t arg5 @ fa2, int32_t arg6 @ t2, int64_t* arg7 @ s0, void* arg8 @ s1, int32_t arg9 @ fs0, int32_t arg10 @ fs1)
+{
+    arg7[8];
+    arg7[4] = arg9;  {  // {"DP100"}}
+    *(arg8 + 0x74) = arg10;
+    *(arg8 + 0x40);
+    arg7[4] = arg9;  {  // {"DP100"}}
+
+    if (arg6 >= 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    arg7[4] = arg9;  {  // {"DP100"}}
+    int32_t fa7;
+    arg_f4 = fa7;
+    int32_t s10;
+    int32_t s11;
+    /* tailcall */
+    return sub_1976(arg1, arg2, arg3, arg4, arg5, arg7, arg8, s10, s11, *(arg8 + 0x80));
+}
+
+int32_t sub_1976(void* arg1, int32_t arg2, int64_t arg3 @ fa0, int64_t arg4 @ fa1, int32_t arg5 @ fa2, int64_t* arg6 @ s0, void* arg7 @ s1, int32_t arg8 @ s10, int32_t arg9 @ s11, int32_t arg10 @ fs0)
+{
+    arg6[4] = arg10;  {  // {"DP100"}}
+
+    if (arg7 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    if (arg2 == 0xffffffe3)
+    {
+        *arg6 = arg6[0xd];
+        /* undefined */;
+    }
+
+    if (arg2 == 0xffffffc6)
+        /* undefined */;
+
+    *(arg1 + 0x2c) = arg1;
+
+    do
+    {
+        arg6[4] = arg10;  {  // {"DP100"}}
+        _csrrc(0x203, 0x19);
+        arg6[4] = arg10;  {  // {"DP100"}}
+        *(arg7 + 0x74) = arg5;
+        arg6[4] = arg10;  {  // {"DP100"}}
+    } while (arg7 != 0);  {  // {"ATK-DP100"}}
+
+    int32_t fa7 = sub_1976();
+    arg6[4] = arg10;  {  // {"DP100"}}
+    arg_b8 = fa7;
+    arg6[8];
+    arg6[4] = arg10;  {  // {"DP100"}}
+    /* undefined */;
+}
+
+int32_t sub_19ac()
+{
+    /* undefined */;
+}
+
+int32_t sub_19fc(void* arg1, int32_t arg2, int32_t, int32_t, int32_t, int32_t arg6, int64_t arg7 @ fa0, int64_t arg8 @ fa1, int32_t arg9 @ fa2, int64_t* arg10 @ s0, void* arg11 @ s1, int32_t arg12 @ t3, int32_t arg13 @ t4, int32_t arg14 @ fs0, int64_t arg15, int64_t arg16, int64_t arg17)
+{
+    if (arg11 != 0)  {  // {"ATK-DP100"}}
+    {
+        if (arg2 == 0xffffffe3)
+        {
+            *(arg11 + 0x38);
+            /* undefined */;
+        }
+
+        if (arg2 == 0xffffffc6)
+            /* undefined */;
+
+        /* undefined */;
+    }
+
+    int32_t fa7;
+    arg_64 = fa7;
+    arg10[4] = arg14;  {  // {"DP100"}}
+    arg10[4] = arg14;  {  // {"DP100"}}
+    *(arg11 + 0x30) = arg9;
+    sub_1a12(arg1, arg2, arg7, arg8, arg9, arg10, arg11, arg14);
+    arg10[4] = arg14;  {  // {"DP100"}}
+
+    if (arg11 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    do
+    {
+        arg10[4] = arg14;  {  // {"DP100"}}
+        _csrrc(0x203, 0x19);
+        arg10[4] = arg14;  {  // {"DP100"}}
+        *(arg11 + 0x74) = arg9;
+        arg10[8];
+        arg10[4] = arg14;  {  // {"DP100"}}
+    } while (arg11 != 0);  {  // {"ATK-DP100"}}
+
+    int32_t s10;
+    int32_t s11;
+    sub_1976(arg1, arg2, arg7, arg8, arg9, arg10, arg11, s10, s11, arg14);
+    arg10[4] = arg14;  {  // {"DP100"}}
+    arg_b8 = fa7;
+    arg10[8];
+    arg10[4] = arg14;  {  // {"DP100"}}
+    /* undefined */;
+}
+
+int32_t sub_1a12(void* arg1, int32_t arg2, int64_t arg3 @ fa0, int64_t arg4 @ fa1, int32_t arg5 @ fa2, int64_t* arg6 @ s0, void* arg7 @ s1, int32_t arg8 @ fs0)
+{
+    arg6[4] = arg8;  {  // {"DP100"}}
+
+    if (arg7 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    do
+    {
+        arg6[4] = arg8;  {  // {"DP100"}}
+        _csrrc(0x203, 0x19);
+        arg6[4] = arg8;  {  // {"DP100"}}
+        *(arg7 + 0x74) = arg5;
+        arg6[8];
+        arg6[4] = arg8;  {  // {"DP100"}}
+    } while (arg7 != 0);  {  // {"ATK-DP100"}}
+
+    int32_t s10;
+    int32_t s11;
+    sub_1976(arg1, arg2, arg3, arg4, arg5, arg6, arg7, s10, s11, arg8);
+    arg6[4] = arg8;  {  // {"DP100"}}
+    int32_t fa7;
+    arg_b8 = fa7;
+    arg6[8];
+    arg6[4] = arg8;  {  // {"DP100"}}
+    /* undefined */;
+}
+
+int32_t j_sub_19fc(void* arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5, int32_t arg6, int64_t arg7 @ fa0, int64_t arg8 @ fa1, int32_t arg9 @ fa2, int64_t arg15, int64_t arg16, int64_t arg17)
+{
+    int64_t* arg10;
+    void* arg11;
+    int32_t arg12;
+    int32_t arg13;
+    int32_t arg14;
+    /* tailcall */
+    return sub_19fc(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17);
+}
+
+int32_t sub_1be2()
+{
+    /* undefined */;
+}
+
+int32_t sub_1f62(int32_t arg1, int32_t arg2, int32_t arg3 @ s10)
+{
+    /* undefined */;
+}
+
+int32_t sub_1faa()
+{
+    /* undefined */;
+}
+
+int32_t sub_1fca(void* arg1 @ s0, int32_t arg2 @ s1)
+{
+    *(arg1 + 0x74);
+    /* tailcall */
+    return sub_19ac();
+}
+
+int32_t sub_2038()
+{
+    /* undefined */;
+}
+
+int32_t j_sub_1faa()
+{
+    /* tailcall */
+    return sub_1faa();
+}
+
+int32_t sub_207c()
+{
+    /* undefined */;
+}
+
+int32_t sub_20a4(void* arg1, int32_t arg2 @ s1)
+{
+    if (arg2 != 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_270e();
+
+    *(arg1 + 0xb0);
+    /* undefined */;
+}
+
+int32_t sub_20de(int32_t, int32_t, int32_t, int32_t, void* arg5, int64_t @ fa0, int64_t @ fa1, int64_t @ fa2, int64_t @ fa3, int64_t @ fa4, int32_t arg11 @ fa5, void* arg12 @ t2, int32_t arg13 @ s0, void* arg14 @ s1, void* arg15 @ s5, int32_t arg16, int64_t arg17)
+{
+    *(arg14 + 0x6c) = arg11;
+
+    if (arg13 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *(arg15 + 0x1f4);
+    *(arg12 - 0x660);
+    arg_a4 = 0;  {  // {"ATK-DP100"}}
+    *(arg5 - 0x2c1);
+    /* undefined */;
+}
+
+int32_t sub_20f2()
+{
+    /* undefined */;
+}
+
+int32_t sub_2104(int32_t arg1)
+{
+    /* undefined */;
+}
+
+int32_t sub_21a0(void* arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5 @ s0, void* arg6 @ s1)
+{
+    if (arg5 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    if (&arg_3ec != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    if (arg2 != 0)  {  // {"ATK-DP100"}}
+    {
+        *(arg6 + 0x3c) = *(arg1 + 0x20);
+        /* undefined */;
+    }
+
+    if (arg4 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    /* undefined */;
+}
+
+int32_t sub_21ca(void* arg1, int32_t arg2, int64_t arg3 @ fa0, int64_t arg4 @ fa1, int32_t arg5 @ fa2, int32_t* arg6 @ s1)
+{
+    *arg6;
+    int64_t* s0;
+    int32_t fs0;
+    /* tailcall */
+    return sub_1a12(arg1, arg2, arg3, arg4, arg5, s0, arg6, fs0);
+}
+
+int32_t sub_2294(void* arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5 @ fa0, int32_t arg6, int32_t arg7, int32_t arg8, int32_t arg9, int64_t arg10, int64_t arg11)
+{
+    *(arg1 + 0x2c);
+
+    if (arg1 != 0)  {  // {"ATK-DP100"}}
+    {
+        arg_84 = arg2;
+        sub_1be2();
+        data_19 = arg5;
+        /* undefined */;
+    }
+
+    if (arg4 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    /* undefined */;
+}
+
+int32_t sub_22c2(void* arg1, int32_t arg2, int64_t arg3 @ fa0, int64_t arg4 @ fa1, int64_t arg5 @ fa2, int64_t arg6 @ fa3, int64_t arg7 @ fa4, int32_t arg8 @ fa5, int32_t arg9 @ s10)
+{
+    sub_28f0(arg1, arg3, arg4, arg5, arg6, arg7, arg8, arg2);
+    sub_20f2();
+    sub_2104(arg1);
+    /* undefined */;
+}
+
+int32_t sub_230a(int32_t, void* arg2, int32_t arg3, void* arg4, int32_t arg5, void* arg6, int32_t arg7, int32_t arg8 @ fa0, int64_t @ fa1, int32_t arg10 @ fa2, void* arg11 @ s0, void* arg12 @ s1, float arg13 @ ft1, float arg14 @ ft2, int64_t arg15 @ fs1, int32_t arg16, int64_t arg17)
+{
+    *(arg12 + 0xe0) = *(arg11 + 0x50);
+    _fmul_s_rmm(_fmul_s_rmm(arg13, arg14), arg14);
+    *(arg11 + 0x20) = *(arg11 + 0x50);
+    arg_40 = arg7;
+    *(arg6 + 0xa0) = *(arg11 + 0x50);
+
+    if (arg11 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    int32_t fa7;
+    arg_10 = fa7;
+
+    if (arg2 == 0)  {  // {"ATK-DP100"}}
+    {
+        if (arg6 != 0)  {  // {"ATK-DP100"}}
+            /* tailcall */
+            return sub_2038();
+
+        *(arg2 + 0x10);
+        /* undefined */;
+    }
+
+    *(arg6 + 0x54) = arg10;
+    *(arg4 + 0x90) = arg15;
+    int32_t gp;
+
+    if (arg3 == (gp + arg5))
+        /* undefined */;
+
+    *(arg12 + 0x3c) = arg3;
+    /* undefined */;
+}
+
+int32_t sub_23b8(int32_t arg1, void* arg2 @ s1)
+{
+    *(arg2 + 0x5c) = arg1;
+    *(arg2 + 0xe8);
+    /* undefined */;
+}
+
+int32_t sub_23ee(int32_t arg1, int32_t arg2, void* arg3, int32_t, void* arg5, int64_t arg6)
+{
+    int64_t fa6;
+    arg_a0 = fa6;
+    *(arg3 + 0x14);
+    *(arg5 + 0x14);
+    /* tailcall */
+    return sub_207c();
+}
+
+int32_t sub_2496(int32_t arg1, void* arg2, void* arg3, int32_t, void* arg5, int32_t arg6, int32_t arg7, void* arg8 @ s1, int32_t arg9 @ s10, int64_t arg10, int32_t arg11, int32_t arg12, int64_t arg13)
+{
+    *(arg8 + 0x14);
+
+    if (arg2 != 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_2104(arg1);
+
+    if (arg2 == 0)  {  // {"ATK-DP100"}}
+    {
+        int64_t fa6;
+        arg_a0 = fa6;
+        *(arg3 + 0x14);
+        *(arg5 + 0x14);
+        /* tailcall */
+        return sub_207c();
+    }
+
+    if (arg6 != 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_2038();
+
+    *(arg2 + 0x10);
+    /* undefined */;
+}
+
+int32_t sub_24b2()
+{
+    void* a0;
+    int32_t a1;
+    int32_t s10;
+    int64_t fa0;
+    int64_t fa1;
+    int64_t fa2;
+    int64_t fa3;
+    int64_t fa4;
+    int32_t fa5;
+    sub_22c2(a0, a1, fa0, fa1, fa2, fa3, fa4, fa5, s10);
+    int32_t s1;
+    /* tailcall */
+    return sub_20a4(a0, s1);
+}
+
+int32_t sub_24ba(int32_t arg1, int32_t arg2, void* arg3, int32_t, void* arg5, int32_t arg6, int32_t arg7, int64_t arg8, int32_t arg9, int32_t arg10)
+{
+    int64_t fa3;
+    arg_160 = fa3;
+    void* ra;
+
+    if (ra == 0xffffffe7)
+    {
+        int64_t fa6;
+        arg_a0 = fa6;
+        *(arg3 + 0x14);
+        *(arg5 + 0x14);
+        /* tailcall */
+        return sub_207c();
+    }
+
+    if (arg6 != 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_2038();
+
+    *(ra + 0x29);
+    /* undefined */;
+}
+
+int32_t sub_2522(int32_t, int32_t, int32_t, void* arg4, void* arg5, void* arg6 @ s1, char arg7 @ s8, void* arg8 @ t6, int64_t arg9)
+{
+    int32_t fs7;
+    arg_e0 = fs7;
+    int64_t fa1 = *(arg5 + 0x40);
+    arg_e0 = fs7;
+    sub_2a54();
+    *(arg6 + 0x38) = fa1;
+    *(arg8 - 0x111) = arg7;  {  // {"]]]]]]]]]]]]]]]"}}
+    *(arg4 + 0x64) = arg4;
+    *(arg6 + 0x38) = fa1;
+    /* undefined */;
+}
+
+int32_t sub_260a(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, void* arg5, int32_t arg6, int32_t arg7, int64_t arg8)
+{
+    int32_t fs7;
+    arg_e0 = fs7;
+    *(arg5 + 0x40);
+    arg_e0 = fs7;
+    sub_2b3c(arg1);
+    int32_t s10;
+    sub_2c78(arg1, arg2, arg3, arg4, arg5, arg6, arg7, s10);
+    /* undefined */;
+}
+
+int32_t sub_270e(int32_t arg1 @ t0, void* arg2 @ s0, int64_t arg3)
+{
+    *(arg2 + 0xc);
+    /* undefined */;
+}
+
+int32_t j_sub_24b2()
+{
+    /* tailcall */
+    return sub_24b2();
+}
+
+int32_t sub_279a(int32_t arg1 @ s1)
+{
+    void* s0;
+    void* a0;
+    int64_t fa0;
+    int64_t fa1;
+    int64_t fa2;
+    int64_t fa3;
+    int64_t fa4;
+    int32_t fa5;
+    a0 = s0();
+
+    if (arg1 != 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_270e();
+
+    int32_t fs0;
+    /* tailcall */
+    return sub_279e(a0, fa0, fa1, fa2, fa3, fa4, fa5, s0, fs0);
+}
+
+int32_t sub_279e(void* arg1, int64_t arg2 @ fa0, int64_t arg3 @ fa1, int64_t arg4 @ fa2, int64_t arg5 @ fa3, int64_t arg6 @ fa4, int32_t arg7 @ fa5, void* arg8 @ s0, int32_t arg9 @ fs0)
+{
+    *(arg8 + 0x20);
+    *(arg8 + 0x20) = arg9;
+    /* tailcall */
+    return sub_27a6(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+}
+
+int32_t sub_27a6(void* arg1, int64_t @ fa0, int64_t @ fa1, int64_t @ fa2, int64_t @ fa3, int64_t @ fa4, int32_t arg7 @ fa5)
+{
+    *(arg1 + 0x74) = arg7;
+    /* undefined */;
+}
+
+int32_t sub_27ae(int32_t, void* arg2, void* arg3, int32_t, int32_t, int32_t, int32_t arg7, int64_t @ fa0, int32_t arg9 @ fa1, int64_t @ fa2, int64_t @ fa3, int64_t @ fa4, int64_t arg13 @ fa5, void* arg14 @ s0, void* arg15 @ s1, int32_t arg16 @ fs0)
+{
+    void* a2_2 = *(arg3 + 0x48);
+    *(arg14 + 0x20) = arg16;
+    *(arg15 + 0x70) = arg9;
+    sub_2bb4();
+    void* a2 = *(a2_2 + 0x48);
+    *(arg14 + 0x20) = arg16;
+
+    if (arg15 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    sub_2bbc();
+    *(a2 + 0x48);
+    *(arg14 + 0x20) = arg16;
+
+    if (arg15 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *(arg2 + 0xb8) = arg9;
+    *(arg15 + 0x60) = arg13;
+    /* undefined */;
+}
+
+int32_t sub_28da(void* arg1, int32_t arg2, int32_t arg3, void* arg4, int32_t arg5, int64_t arg6 @ fa0, int64_t arg7 @ fa1, int64_t arg8 @ fa2, int64_t arg9 @ fa3, int32_t arg10 @ fa4, int32_t arg11 @ fa5, int64_t arg12, int64_t arg13, int32_t arg14)
+{
+    int32_t s11;
+    arg_40 = s11;
+    arg_c0 = arg10;
+    arg_40 = s11;
+    void* s0;
+    int32_t fs0;
+    /* tailcall */
+    return sub_279e(arg1, arg6, arg7, arg12, *(arg4 + 0x38), arg10, arg11, s0, fs0);
+}
+
+int32_t sub_28f0(void* arg1, int64_t arg2 @ fa0, int64_t arg3 @ fa1, int64_t arg4 @ fa2, int64_t arg5 @ fa3, int64_t arg6 @ fa4, int32_t arg7 @ fa5, int32_t arg8)
+{
+    /* tailcall */
+    return sub_27a6(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+}
+
+int32_t sub_28f6(void* arg1, void* arg2, void* arg3, int32_t arg4, int32_t arg5)
+{
+    void* s0;
+    void* s1;
+    int32_t a5;
+    int32_t a6;
+    int32_t fs0;
+    int64_t fa0;
+    int32_t fa1;
+    int64_t fa2;
+    int64_t fa3;
+    int64_t fa4;
+    int64_t fa5;
+    /* tailcall */
+    return sub_27ae(arg1, arg2, arg3, arg4, (*(arg1 + 0x4c) - 3), a5, a6, fa0, fa1, fa2, fa3, fa4, fa5, s0, s1, fs0);  {  // {"-DP100"}}
+}
+
+int32_t sub_29a8(int32_t arg1)
+{
+    void* s1;
+    /* tailcall */
+    return sub_23b8(arg1, s1);
+}
+
+int32_t sub_29ae(int32_t arg1 @ s10)
+{
+    /* jump -> arg1 */
+}
+
+int32_t sub_2a54()
+{
+    /* undefined */;
+}
+
+int32_t sub_2ab4()
+{
+    int32_t fa6;
+    arg_4 = fa6;
+    /* tailcall */
+    return sub_2ab8();
+}
+
+int32_t sub_2ab8()
+{
+    /* undefined */;
+}
+
+int32_t sub_2b3c(int32_t arg1)
+{
+    /* undefined */;
+}
+
+int32_t sub_2bb4()
+{
+    /* undefined */;
+}
+
+int32_t sub_2bbc()
+{
+    /* undefined */;
+}
+
+int32_t sub_2c78(int32_t arg1, int32_t, int32_t arg3, int32_t, int32_t, int32_t arg6, int32_t arg7, int32_t arg8 @ s10)
+{
+    sub_2ab4();
+    sub_2ab8();
+    /* undefined */;
+}
+
+int32_t sub_32ae(int64_t arg1)
+{
+    /* undefined */;
+}
+
+int32_t sub_33c6(int32_t, int32_t arg2, int32_t, int32_t, void* arg5, void* arg6, int64_t @ fa0, int64_t @ fa1, int64_t @ fa2, int64_t @ fa3, int64_t arg11 @ fa4, int32_t arg12 @ fa5, void* arg13 @ s0, int64_t* arg14 @ s1)
+{
+    *(arg5 + 0x70) = arg13;
+    *arg14 = arg11;
+
+    if (arg6 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *(arg5 + 0x70) = arg2;
+    *(arg6 + 0x14) = arg12;
+    arg14[0xa];
+    *(arg13 + 0x70) = *(arg6 + 0x28);
+    /* undefined */;
+}
+
+int32_t sub_4360()
+{
+    /* undefined */;
+}
+
+int32_t sub_4540(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4)
+{
+    if (arg4 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    /* tailcall */
+    return sub_4546(arg1);
+}
+
+int32_t sub_4546(int32_t arg1)
+{
+    int32_t fa3;
+    arg_d0 = fa3;
+    void* a0;
+    int32_t a1;
+    void* a1_1;
+    int32_t a2;
+    int32_t a2_1;
+    int32_t a3;
+    void* a3_1;
+    int32_t a4;
+    int32_t a5;
+    int32_t t5;
+    int32_t fa1;
+    int32_t fa2;
+    a0 = 0xfffaadea(0x5000, a1, a2, a3, a4, a5, 0xfffffffb);
+    void* s0;
+    void* s1;
+    /* tailcall */
+    return sub_4c8c(a0, a1_1, a2_1, a3_1, arg1, fa1, fa2, s0, s1);
+}
+
+int32_t sub_45a6(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5, void* arg6, int64_t @ fa0, int64_t @ fa1, int64_t arg9 @ fa2, int64_t arg10 @ fa3, int32_t arg11 @ s0, int32_t arg12 @ s9, int32_t arg13 @ s11, int32_t arg14 @ t3, int64_t arg15 @ fs0, int32_t arg16, int64_t arg17)
+{
+    int32_t a0 = *(arg3 + 0x5c);
+    int32_t a3 = (arg4 >> 0x29);
+    int32_t fs7;
+    arg_d8 = fs7;
+
+    if (a3 == 0)  {  // {"ATK-DP100"}}
+    {
+        *(arg6 + 0xc0) = arg10;
+        *((arg5 >> 0x29) + 0xc0) = arg9;
+        *(arg6 + 0xc0) = arg10;
+        *(arg6 + 0xc0) = arg10;
+        *(arg6 + 0xc0) = arg10;
+    }
+    else
+    {
+        arg3 = ((arg3 + arg12) >> 0x29);
+        arg2 <<= 0x1b;
+        int32_t s1;
+        int32_t s10;
+        void* t4;
+
+        if (a3 != 0)  {  // {"ATK-DP100"}}
+            /* tailcall */
+            return sub_45c0(a0, arg2, s1, arg12, s10, arg13, t4);
+    }
+
+    *(arg6 + 0xc0) = arg10;
+    *(arg6 + 0xc0) = arg10;
+    *(arg6 + 0xc0) = arg10;
+    *(arg6 + 0xc0) = arg10;
+    *(arg6 + 0xc0) = arg10;
+    *(arg6 + 0xc0) = arg10;
+    *(arg2 + 0xe0);
+    *(arg3 + 0xc0) = arg15;
+    /* tailcall */
+    return sub_4852(a0, arg2, arg3, a3);
+}
+
+int32_t sub_45c0(int32_t arg1, int32_t arg2, int32_t arg3 @ s1, int32_t arg4 @ s9, int32_t arg5 @ s10, int32_t arg6 @ s11, void* arg7 @ t4)
+{
+    *(arg7 + 0x6f6);
+    /* undefined */;
+}
+
+int32_t sub_46de(void* arg1, void* arg2, void* arg3, void* arg4, int32_t arg5, void* arg6, int64_t @ fa0, int64_t @ fa1, int64_t @ fa2, int64_t arg10 @ fa3, int32_t arg11 @ s8, int32_t arg12 @ fs0, int64_t arg13 @ fs1)
+{
+    *(arg6 + 0xe8) = arg10;
+    *(arg4 + 0x18) = arg12;
+    *(arg3 + 0x48);
+    void* s1 = *(arg6 + 0x10);
+
+    if (arg5 == 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_4360();
+
+    *(arg1 + 0x18) = arg12;
+    *(s1 + 0x6c) = &arg_218;
+    *(arg2 + 0x38) = arg13;
+    arg_284 = &arg_218;
+    /* undefined */;
+}
+
+int32_t sub_4852(int32_t, int32_t, int32_t, void* arg4)
+{
+    *(arg4 + 0xe8);
+    /* undefined */;
+}
+
+int32_t sub_4a14(int32_t arg1, int32_t arg2, void* arg3 @ t1, int32_t arg4 @ fs1)
+{
+    *(arg3 + 0x6fc) = arg4;
+    int32_t s11;
+    arg_68 = s11;
+    int32_t s1;
+    int32_t s9;
+    int32_t s10;
+    void* t4;
+    /* tailcall */
+    return sub_45c0(arg1, arg2, s1, s9, s10, s11, t4);
+}
+
+int32_t sub_4a7e()
+{
+    /* undefined */;
+}
+
+int32_t sub_4a86(int32_t* arg1, void* arg2, uint32_t arg3, int32_t arg4, int32_t arg5 @ s1, uint32_t arg6 @ s8, int32_t arg7, int32_t arg8)
+{
+    *(arg2 + 0x10) = arg1;
+    *arg1 = arg5;
+    int64_t fa5;
+    arg_1e0 = fa5;
+    _csrrw(arg3);
+    _csrrw(arg6);
+    arg_a0 = arg7;
+    /* undefined */;
+}
+
+int32_t j_sub_4afe(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, int64_t* arg5, int64_t* arg6 @ s1, int32_t arg7 @ fs0)
+{
+    /* tailcall */
+    return sub_4afe(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+}
+
+int32_t sub_4a90(int32_t, int32_t, int32_t, int32_t arg4, int64_t* arg5, void* arg6 @ s0, int64_t* arg7 @ s1)
+{
+    *(arg6 + 0x5c);
+    *arg5;
+    *arg7;
+    /* undefined */;
+}
+
+int32_t sub_4afe(int32_t, int32_t, int32_t, int32_t, int64_t* arg5, int64_t* arg6 @ s1, int32_t arg7 @ fs0)
+{
+    arg6[2] = arg7;  {  // {"K-DP100"}}
+    *arg5;
+    *arg6;
+    /* undefined */;
+}
+
+int32_t sub_4b26(int32_t arg1, int32_t arg2, void* arg3, int32_t arg4, void* arg5, int64_t arg6 @ fa0, int64_t arg7 @ fa1, int64_t arg8 @ fa2, int32_t arg9 @ fa3, int32_t arg10 @ s1)
+{
+    *(arg5 + 0xc) = arg4;
+    *(arg3 + 0x5c) = arg9;
+    /* tailcall */
+    return sub_4546(arg1);
+}
+
+int32_t sub_4b38(int32_t, int32_t, int32_t, int32_t, int32_t arg5, void* arg6)
+{
+    *(arg6 + 0x48);
+    /* tailcall */
+    return sub_4a7e();
+}
+
+int32_t sub_4b52(int32_t arg1, void* arg2, int32_t arg3 @ s1)
+{
+    if (arg3 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    /* tailcall */
+    return sub_5258(arg1, arg2, &arg_250);
+}
+
+int32_t sub_4c8c(void* arg1, void* arg2, int32_t arg3, void* arg4, int64_t @ fa0, int32_t arg6 @ fa1, int32_t arg7 @ fa2, void* arg8 @ s0, void* arg9 @ s1)
+{
+    int32_t a2 = *(arg2 + 0x54);
+    *(arg1 + 0x50) = arg7;
+
+    if (arg9 != 0)  {  // {"ATK-DP100"}}
+        *(arg9 + 0x3c) = arg6;
+    else
+        *(arg8 + 0x20) = a2;
+
+    *(arg8 + 0x78) = arg6;
+    *(arg9 + 0x1c) = arg1;
+    *(arg9 + 0x3c);
+    *(arg9 + 0x1c);
+    *(arg4 + 0x6c);
+    /* undefined */;
+}
+
+int32_t sub_4cb8()
+{
+    /* undefined */;
+}
+
+int32_t sub_4ed8()
+{
+    /* undefined */;
+}
+
+int32_t sub_5226(int32_t, void* arg2, int64_t @ fa0, int32_t arg4 @ fa1, void* arg5 @ s0)
+{
+    *(arg2 + 0x68) = arg4;
+    *(arg5 + 0x7c);
+    /* undefined */;
+}
+
+int32_t sub_5258(int32_t arg1, void* arg2, int32_t arg3, int32_t arg4, int32_t arg5, int32_t arg6, void* arg7, int64_t arg8 @ fa0, double arg9, int32_t arg10 @ t2, void* arg11 @ s0, int32_t arg12 @ s3, int32_t arg13 @ s7, double arg14 @ ft6, int32_t arg15 @ fs2, int32_t arg16, int64_t arg17, int32_t arg18, int64_t arg19, int64_t arg20, int64_t arg21)
+{
+    *(arg2 + 0x40);
+    *(arg11 + 0xe0) = arg9;
+
+    if (arg11 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    if (arg10 < arg7)
+    {
+        _fsub_d_rup(_fmul_d_rup(arg14, arg9), arg9);
+        /* undefined */;
+    }
+
+    _csrrc(0x217, arg12);
+    int32_t s4;
+    sub_5e48(s4);
+    arg_58 = arg17;
+    sub_5d22();
+    int32_t t0;
+    void* a0;
+    void* a1;
+    int32_t a2;
+    int32_t a3;
+    int32_t a4;
+    int32_t a5;
+    int32_t a6;
+    int32_t a7;
+    int32_t t3;
+    int64_t fa0;
+    int64_t fa1;
+    int64_t fa2;
+    int64_t fa3;
+    int64_t fa4;
+    a0 = sub_5cb2(0xffffffe1, arg2, 0xfffffff6, arg4, arg5, arg6, arg11, arg7);
+    arg_58 = arg15;
+    *(a0 + 0xf0) = fa0;
+    sub_5c80(a0, a1, a2, a3, a4, a5, a6, fa0, fa1, fa2, fa3, fa4, t0, t3, a7);
+    arg_58 = arg17;
+    void* s1;
+    void* s5;
+    int32_t fs10;
+    sub_5d38(s1, s5, fs10);
+    sub_5cc0();
+    arg_58 = arg15;
+    /* tailcall */
+    return sub_5526(0xffffffe1);
+}
+
+int32_t sub_5306(int32_t, int32_t arg2, void* arg3, void* arg4, int32_t arg5, void* arg6, int32_t, int32_t arg8, int32_t arg9 @ t1, void* arg10 @ s6, void* arg11 @ s9, int64_t arg12 @ fs1, int64_t arg13, int32_t arg14, int32_t arg15)
+{
+    if (arg5 == 0)  {  // {"ATK-DP100"}}
+    {
+        int64_t fa3;
+        arg_b0 = fa3;
+        int64_t fs0;
+        arg_140 = fs0;
+        /* unimplemented  {fence.i a1, a0, 0x45d} */;
+        *(arg3 + 0x98) = arg12;
+        arg_140 = fs0;
+        /* undefined */;
+    }
+
+    if (arg2 != 0)  {  // {"ATK-DP100"}}
+    {
+        int64_t ft2;
+        arg_c8 = ft2;
+        arg_c8 = &arg_0;
+        *(arg4 + 8);
+        sub_4ed8();
+        *(arg4 + 8);
+        /* undefined */;
+    }
+
+    *(arg10 + 0x727) = arg8;
+
+    if (arg5 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    if (arg6 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    if (arg4 != 0)  {  // {"ATK-DP100"}}
+    {
+        *(arg11 + 0x69b);
+        *(arg4 + 0x70);
+    }
+    else
+    {
+        *arg_c8[4] = arg9;  {  // {"DP100"}}
+        *(arg4 + 0x10);
+
+        if (arg6 != 0)  {  // {"ATK-DP100"}}
+        {
+            *(arg6 + 8) = arg5;
+            *(arg4 + 0x10);
+            *(arg11 + 0x69b);
+            *(arg4 + 0x70);
+        }
+    }
+
+    /* undefined */;
+}
+
+int32_t sub_5504(void* arg1, int32_t arg2 @ fs0)
+{
+    *(arg1 + 0x2c) = arg2;
+    /* undefined */;
+}
+
+int32_t sub_5524(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5, void* arg6 @ s0)
+{
+    *(arg6 + 0x20) = arg5;
+    /* tailcall */
+    return sub_5526();
+}
+
+int32_t sub_5526(void* arg1, void* arg2, int32_t arg3, int64_t* arg4, void* arg5, void* arg6, float arg7, int64_t @ fa1, int64_t arg9 @ fa2, void* arg10 @ s0, void* arg11 @ s1, int32_t arg12 @ t4, int32_t arg13 @ fs0, float arg14 @ fs1, int32_t arg15, int64_t arg16, int64_t arg17, int32_t arg18)
+{
+    *arg4 = arg9;
+    *(arg6 + 0x6c) = arg10;
+    *(arg1 + 0x30) = arg9;
+
+    if (arg2 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *(arg2 + 0x34) = arg13;
+    *(arg10 + 0x20) = arg5;
+    *(arg6 + 0x6c) = arg10;
+    int64_t fa2 = *(arg5 + 0x30);
+
+    if (arg2 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    if (arg11 == 0)  {  // {"ATK-DP100"}}
+    {
+        *(arg1 + 0x30) = fa2;
+        *(arg2 + 0x34) = fa2;
+        *(arg10 + 0x20) = arg5;
+        *(arg6 + 0x6c) = arg10;
+        *(arg10 + 0x30) = *(arg11 + 0x14);
+        *(arg10 + 0x30) = arg1;
+        *(arg10 + 0x30) = arg1;
+        *(arg10 + 0x50);
+        *(arg10 + 0x70) = arg10;
+        *(arg10 + 0x10);
+        *(*(arg1 + 0x64) + 0x64);
+        *(arg5 + 0x1c);
+        /* undefined */;
+    }
+
+    *(arg6 + 0x54) = arg5;
+    _fmul_s_rmm(_fmul_s_rmm(arg14, arg7), arg7);
+    sub_4cb8();
+    *(arg1 + 4) = arg10;  {  // {"DP100"}}
+
+    if (arg10 != 0)  {  // {"ATK-DP100"}}
+    {
+        arg_1b0 = arg16;
+        /* undefined */;
+    }
+
+    while (arg1 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    arg_158 = fa2;
+    arg_20 = arg7;
+
+    if (arg10 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    /* tailcall */
+    return j_sub_5306();
+}
+
+int32_t sub_5722(int32_t arg1, int32_t arg2, void* arg3, int32_t, int32_t, int32_t arg6, int32_t arg7 @ t0, int32_t arg8 @ s4, int32_t arg9 @ s5)
+{
+    sub_5da6(arg1, arg2, arg3, (arg9 + 0x10));
+
+    if (arg3 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    if ((arg2 & 0xffffffee) >= arg6)
+        /* undefined */;
+
+    /* undefined */;
+}
+
+int32_t sub_5810(void* arg1, void* arg2, int32_t arg3, int32_t arg4, int32_t arg5, int32_t arg6, int32_t arg7, int32_t arg8 @ t4)
+{
+    /* tailcall */
+    return sub_5cd6(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+}
+
+int32_t sub_5820(int32_t arg1 @ s11)
+{
+    void* a0;
+    void* a1;
+    sub_5d40(a0, a1);
+    int32_t t0;
+    int32_t t1;
+    int32_t a2;
+    int32_t a3;
+    int32_t a4;
+    int32_t a5;
+    int32_t a6;
+    int32_t fs2;
+    /* tailcall */
+    return sub_5c64(a0, a1, a2, a3, a4, a5, a6, t0, t1, fs2);
+}
+
+int32_t j_sub_5524(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5, void* arg6 @ s0)
+{
+    /* tailcall */
+    return sub_5524(arg1, arg2, arg3, arg4, arg5, arg6);
+}
+
+int32_t j_sub_5226(int32_t arg1, void* arg2, int64_t arg3 @ fa0, int32_t arg4 @ fa1, void* arg5 @ s0)
+{
+    /* tailcall */
+    return sub_5226(arg1, arg2, arg3, arg4, arg5);
+}
+
+int32_t sub_58fe(int32_t arg1, int32_t arg2, void* arg3, int32_t arg4, int32_t arg5, int32_t arg6, int32_t arg7 @ s0, int32_t arg8 @ s8, int32_t arg9)
+{
+    int32_t t0;
+    int32_t s4;
+    int32_t s5;
+    sub_5722(arg1, arg2, arg3, arg4, arg5, arg6, t0, s4, s5);
+    /* undefined */;
+}
+
+int32_t sub_5946(int32_t, int32_t, int32_t, int32_t, int32_t, int32_t arg6, int64_t arg7)
+{
+    if (arg6 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    /* undefined */;
+}
+
+int32_t j_sub_5306(int32_t arg1, int32_t arg2, void* arg3, void* arg4, int32_t arg5, void* arg6, int32_t arg7, int32_t arg8, int64_t arg13, int32_t arg14, int32_t arg15)
+{
+    int32_t arg9;
+    void* arg10;
+    void* arg11;
+    int64_t arg12;
+    /* tailcall */
+    return sub_5306(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15);
+}
+
+int32_t sub_5c2c(void* arg1)
+{
+    *(arg1 + 0x2f);
+    /* undefined */;
+}
+
+int32_t sub_5c54(void* arg1, int32_t arg2 @ t1, int32_t arg3 @ fs1)
+{
+    *(arg1 + 8) = arg3;
+    int32_t fs0;
+    /* tailcall */
+    return sub_5504(arg1, fs0);
+}
+
+int32_t sub_5c5c(void* arg1, void* arg2, int32_t arg3, float arg4 @ fs3, float arg5 @ ft8)
+{
+    _fsub_s_rup(-(_fmul_s_rup(arg4, arg5)), arg5);
+    *(arg2 + 0x40);
+    int32_t t1;
+    int32_t t1_1;
+    int32_t s0;
+    void* a1;
+    int32_t a3;
+    int32_t a4;
+    int32_t a5;
+    int32_t a6;
+    t1_1 = sub_5c72(arg1, arg2, arg3, a3, a4, a5, a6, t1, s0);
+    int32_t t0;
+    int32_t fs2;
+    /* tailcall */
+    return sub_5c64(arg1, a1, 0, a3, a4, a5, a6, t0, t1_1, fs2);  {  // {"ATK-DP100"}}
+}
+
+int32_t sub_5c64(void* arg1, void* arg2, int32_t arg3, int32_t arg4, int32_t arg5, int32_t arg6, int32_t arg7, int32_t arg8 @ t0, int32_t arg9 @ t1, int32_t arg10 @ fs2)
+{
+    sub_60e8();
+    *((&arg_0 << 0x11) + 0x60) = arg10;
+    *(arg1 + 0x14);
+    int32_t s0;
+    /* tailcall */
+    return sub_5c72(arg1, arg2, arg3, arg4, arg5, arg6, arg7, (arg9 + 0x1a), s0);
+}
+
+int32_t sub_5c72(void* arg1, void* arg2, int32_t arg3, int32_t arg4, int32_t arg5, int32_t arg6, int32_t arg7, int32_t arg8 @ t1, int32_t arg9 @ s0)
+{
+    int32_t s0 = (arg9 ^ arg5);
+    int32_t s8;
+
+    if (s0 != 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_58fe(arg1, 0xcc870c06, nullptr, arg4, arg5, arg6, s0, s8, arg7);
+    /* tailcall */
+    return sub_5c80(arg1, arg2, 0);  {  // {"ATK-DP100"}}
+}
+
+int32_t sub_5c80(void* arg1, void* arg2, int32_t, int32_t, int32_t, int32_t, int32_t arg7, int64_t arg8 @ fa0, int64_t arg9 @ fa1, int64_t arg10 @ fa2, int64_t arg11 @ fa3, int64_t arg12 @ fa4, int32_t arg13 @ t0, int32_t arg14 @ t3, int32_t arg15)
+{
+    *(arg2 + 0x80);
+    void* s0;
+    sub_60d4(arg8, arg9, arg10, arg11, arg12, s0, arg1);
+    *(arg1 + 0x14);
+    /* undefined */;
+}
+
+int32_t sub_5cb2(int32_t, int32_t, int32_t, int32_t arg4, int32_t, int32_t arg6, void* arg7 @ s0, void* arg8)
+{
+    *(arg7 + 0x28) = arg4;
+    *(arg8 + 0xe0);
+    *(arg8 + 0xe0);
+    *(arg8 + 0x28) = arg6;
+    /* tailcall */
+    return sub_5cc0();
+}
+
+int32_t sub_5cc0()
+{
+    _fence(0xad);
+    /* undefined */;
+}
+
+int32_t sub_5cd6(void* arg1, void* arg2, int32_t arg3, int32_t arg4, int32_t arg5, int32_t arg6, int32_t arg7)
+{
+    if (arg2 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *(arg1 + 0x14);
+    int32_t t1;
+    int32_t s0;
+    /* tailcall */
+    return sub_5c72(arg1, arg2, arg3, arg4, arg5, arg6, arg7, t1, s0);
+}
+
+int32_t sub_5d14(int32_t, int32_t, int32_t, void* arg4, int32_t, int32_t arg6, int32_t arg7 @ fa0, int64_t @ fa1, int32_t arg9 @ fa2, void* arg10 @ s0, void* arg11 @ s1, int32_t arg12 @ ft7)
+{
+    *(arg4 - 0x674) = arg12;
+    *(arg10 + 0x40) = arg9;
+    *(arg11 + 0x40) = arg7;
+    /* tailcall */
+    return sub_5d22();
+}
+
+int32_t sub_5d22()
+{
+    /* undefined */;
+}
+
+int32_t sub_5d26(int32_t* arg1, int32_t arg2 @ s0, void* arg3 @ s1, int64_t arg4)
+{
+    *(arg3 + 0x40);
+    *(arg3 + 0x40);
+    *arg1 = (arg2 & 0xfffffffb);
+    /* tailcall */
+    return j_sub_6344();
+}
+
+int32_t sub_5d38(void* arg1 @ s1, void* arg2 @ s5, int32_t arg3 @ fs10)
+{
+    *(arg2 + 0x74b) = arg3;
+    *(arg1 + 0x40) = arg1;
+    /* tailcall */
+    return sub_5946();
+}
+
+int32_t sub_5d40(int32_t, int32_t arg2)
+{
+    /* undefined */;
+}
+
+int32_t sub_5da6(int32_t, int32_t, void* arg3, int32_t arg4 @ s5)
+{
+    *(arg3 + 0x5c);
+    /* undefined */;
+}
+
+int32_t sub_5e48(int32_t arg1 @ s4)
+{
+    /* undefined */;
+}
+
+int32_t sub_5f14(void* arg1 @ t1, int32_t arg2)
+{
+    *(arg1 + 0x7f4);
+    /* undefined */;
+}
+
+int32_t sub_5f20()
+{
+    /* undefined */;
+}
+
+int32_t sub_60d4(int64_t @ fa0, int64_t @ fa1, int64_t @ fa2, int64_t @ fa3, int64_t arg5 @ fa4, void* arg6 @ s0, int32_t arg7)
+{
+    *(arg6 + 0x58) = arg5;
+    /* undefined */;
+}
+
+int32_t sub_60e8(void* arg1, void* arg2, int32_t arg3, int32_t arg4, int32_t arg5, void* arg6, int32_t arg7, int32_t arg8 @ fa0, int64_t arg9 @ fa1, int32_t arg10 @ fa2, int64_t arg11 @ fa3, int64_t arg12 @ fa4, int32_t arg13 @ fa5, void* arg14 @ s1, int32_t arg15 @ s3, int32_t arg16 @ s4, int32_t arg17 @ s10, int32_t arg18, int32_t arg19, int32_t arg20, void* arg21, int64_t arg22, int64_t arg23)
+{
+    void* t1;
+    sub_5f14(t1, arg1);
+
+    if (arg1 != 0)  {  // {"ATK-DP100"}}
+    {
+        if (arg2 == 0)  {  // {"ATK-DP100"}}
+        {
+            *(arg6 + 0x40) = arg10;
+            /* undefined */;
+        }
+
+        if (arg2 == 0)  {  // {"ATK-DP100"}}
+            /* undefined */;
+
+        if (arg2 != 0)  {  // {"ATK-DP100"}}
+        {
+            sub_5f20();
+
+            if (arg2 != 0)  {  // {"ATK-DP100"}}
+            {
+                *(arg14 + 0x40);
+                /* undefined */;
+            }
+
+            if (arg6 == 0)  {  // {"ATK-DP100"}}
+            {
+            label_629a:
+                *(arg1 + 0x74);
+                *(arg2 + 0x74);
+                /* undefined */;
+            }
+
+            int64_t fa0_2 = *(arg14 + 0x20);
+
+            if (arg2 != 0)  {  // {"ATK-DP100"}}
+            {
+                *(arg14 + 0xc0) = arg11;
+
+                if (arg14 == 0)  {  // {"ATK-DP100"}}
+                {
+                    sub_6838();
+                    /* undefined */;
+                }
+
+                *(arg14 + 0x64) = *(arg2 + 0x64);
+                *(arg6 + 0x64) = fa0_2;
+
+                if (arg1 != 0)  {  // {"ATK-DP100"}}
+                    goto label_629a;
+
+                sub_67ea((arg1 >> 0x2b));
+                int32_t* s10_2 = /* int32_t* s10_2 = unimplemented  {sc.w.aq s10, s4, 0x0(s10)} */;  {  // {"ATK-DP100"}}
+
+                if (s10_2 == 0)  {  // {"ATK-DP100"}}
+                    *s10_2 = arg16;
+
+                sub_6812();
+                sub_688c();
+                /* undefined */;
+            }
+
+            if (arg6 == 0)  {  // {"ATK-DP100"}}
+            {
+                *(arg6 + 0x40) = arg10;
+                /* undefined */;
+            }
+
+            while (arg21 == 0)  {  // {"ATK-DP100"}}
+                /* nop */
+
+            *(arg2 + 0x34);
+
+            if (arg2 == 0)  {  // {"ATK-DP100"}}
+            {
+                *(arg1 + 0x70) = *(arg14 + 0x20);
+                arg7 += 0xa;
+                *(arg14 + 0x10);
+            }
+            else
+            {
+                if (arg1 != 0)  {  // {"ATK-DP100"}}
+                {
+                    *(arg14 + 0x58) = fa0_2;
+                    *0xfffe4068;
+                    /* undefined */;
+                }
+
+                while (arg4 != 0)  {  // {"ATK-DP100"}}
+                    /* nop */
+
+                if (arg4 != 0)  {  // {"ATK-DP100"}}
+                {
+                    *(arg1 + 0x10);
+                    /* undefined */;
+                }
+            }
+
+            if (arg21 != 0)  {  // {"ATK-DP100"}}
+                /* undefined */;
+
+            int64_t fs0;
+            sub_6830(arg1, arg2, &data_f000, arg4, arg5, arg6, fs0, arg7);
+
+            if (arg4 == 0)  {  // {"ATK-DP100"}}
+                /* undefined */;
+
+            *(arg21 + 0x68);
+            /* undefined */;
+        }
+
+        *(arg1 + 0xc) = arg13;
+    }
+
+    /* undefined */;
+}
+
+int32_t sub_6344(void* arg1, void* arg2, int32_t arg3, int32_t arg4, int32_t arg5, void* arg6, int32_t arg7 @ fa0, int32_t arg8 @ s0, void* arg9 @ s1, int32_t arg10 @ s4, int32_t arg11 @ s10, int64_t arg12)
+{
+    arg_f8 = 0;  {  // {"ATK-DP100"}}
+    sub_696e();
+
+    while (arg8 != 0)  {  // {"ATK-DP100"}}
+    {
+        sub_69b2();
+
+        if (arg2 != 0)  {  // {"ATK-DP100"}}
+        {
+            sub_69ba(arg1, arg2, arg9);
+            *(arg1 + 0x58);
+            arg_70 = arg11;
+            *(arg1 + 0x4c);
+            /* undefined */;
+        }
+    }
+
+    if (arg9 == 0)  {  // {"ATK-DP100"}}
+    {
+        sub_6838();
+        /* undefined */;
+    }
+
+    *(arg9 + 0x64) = *(arg2 + 0x64);
+    *(arg6 + 0x64) = arg7;
+
+    if (arg1 != 0)  {  // {"ATK-DP100"}}
+    {
+        *(arg1 + 0x74);
+        *(arg2 + 0x74);
+        /* undefined */;
+    }
+
+    sub_67ea((arg1 >> 0x2b));
+    int32_t* s10_2 = /* int32_t* s10_2 = unimplemented  {sc.w.aq s10, s4, 0x0(s10)} */;  {  // {"ATK-DP100"}}
+
+    if (s10_2 == 0)  {  // {"ATK-DP100"}}
+        *s10_2 = arg10;
+
+    sub_6812();
+    sub_688c();
+    /* undefined */;
+}
+
+int32_t j_sub_6344(void* arg1, void* arg2, int32_t arg3, int32_t arg4, int32_t arg5, void* arg6, int32_t arg7 @ fa0, int64_t arg12)
+{
+    int32_t arg8;
+    void* arg9;
+    int32_t arg10;
+    int32_t arg11;
+    /* tailcall */
+    return sub_6344(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9, arg10, arg11, arg12);
+}
+
+int32_t sub_67ea(void* arg1, void* arg2, int32_t, int32_t, int32_t* arg5, int32_t arg6, int32_t arg7, int32_t arg8 @ fa0, int64_t arg9 @ fa1, int32_t arg10 @ fa2, float arg11, int64_t @ fa4, int32_t arg13 @ fa5, int64_t @ fa6, float arg15, int32_t arg16 @ s1, float arg17 @ ft5, int32_t arg18 @ fs0, int32_t arg19 @ fs1, int32_t arg20 @ fs3, float arg21 @ fs11, float arg22 @ ft8, float arg23 @ ft10, int32_t arg24, int32_t arg25, int64_t arg26)
+{
+    while (arg2 != 0)  {  // {"ATK-DP100"}}
+    {
+        int32_t t1;
+        arg_44 = t1;
+        sub_6e14();
+        _fsub_s_rmm(-(_fmul_s_rmm(arg17, arg21)), arg21);
+
+        if (arg2 != 0)  {  // {"ATK-DP100"}}
+        {
+            if (arg2 == 0)  {  // {"ATK-DP100"}}
+                /* undefined */;
+
+            /* undefined */;
+        }
+
+        _fadd_s_rmm(-(_fmul_s_rmm(arg11, arg23)), arg23);
+
+        if (arg16 == 0)  {  // {"ATK-DP100"}}
+        {
+            *(arg2 + 0x60) = arg9;
+            /* undefined */;
+        }
+
+        if (arg16 != 0)  {  // {"ATK-DP100"}}
+        {
+            *(arg2 + 0x50) = arg18;
+            _fsub_s_rne(-(_fmul_s_rne(arg22, arg15)), arg15);
+            *(arg1 + 0x14) = arg13;
+
+            if (arg1 != 0)  {  // {"ATK-DP100"}}
+                /* undefined */;
+
+            /* undefined */;
+        }
+
+        *(arg1 + 0x10) = arg18;
+
+        if (arg2 == 0)  {  // {"ATK-DP100"}}
+        {
+            int32_t ft6 = arg_0;
+            *arg5 = arg19;
+            void* ra;
+            *(ra - 0xcb);
+            *(arg5 + 0x20);
+            arg5[9] = arg10;
+            void* tp;
+            *(tp - 0x290);
+            arg_c0 = ft6;
+            /* undefined */;
+        }
+    }
+
+    if (arg16 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *(arg2 + 0x50) = arg8;
+    *((&arg_0 << 8) + 0x88) = arg20;
+    /* undefined */;
+}
+
+int32_t sub_6812(int32_t arg1, int32_t arg2, int32_t arg3, void* arg4, int32_t arg5 @ s0, float arg6 @ fs7, float arg7 @ ft9, int64_t arg8, int64_t arg9)
+{
+    *(arg4 + 0x74);
+    void* s0 = (arg5 & 0x10);
+    int32_t fa1;
+    arg_68 = fa1;
+
+    if (s0 == 0)  {  // {"ATK-DP100"}}
+    {
+        *(s0 + 0x68);
+        /* undefined */;
+    }
+
+    _fadd_s_rne(arg6, arg7);
+    int64_t fs3;
+    arg_18 = fs3;
+    arg_58 = fs3;
+    arg_e0 = arg3;
+
+    if (arg2 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    arg_58 = fs3;
+    /* tailcall */
+    return sub_6830();
+}
+
+int32_t sub_6830(int32_t arg1, int32_t arg2, void* arg3, int32_t arg4, int32_t arg5, int32_t arg6, int64_t arg7 @ fs0, int32_t arg8)
+{
+    if (arg4 != 0)  {  // {"ATK-DP100"}}
+    {
+        if (arg2 == 0)  {  // {"ATK-DP100"}}
+            /* undefined */;
+
+        /* undefined */;
+    }
+
+    *(arg3 + 0xb0) = arg7;
+
+    if (arg2 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    /* tailcall */
+    return sub_6838();
+}
+
+int32_t sub_6838(void* arg1, void* arg2, int32_t, int32_t, double* arg5, int32_t arg6, int32_t arg7, int32_t arg8 @ fa0, int64_t arg9 @ fa1, int32_t arg10 @ fa2, float arg11, int64_t @ fa4, int32_t arg13 @ fa5, int64_t @ fa6, float arg15, int32_t arg16 @ s1, float arg17 @ ft5, int32_t arg18 @ fs0, double arg19 @ fs1, int32_t arg20 @ fs3, double arg21 @ fs5, float arg22 @ fs11, float arg23 @ ft8, float arg24 @ ft10, int32_t arg25, int32_t arg26)
+{
+    if (arg2 == 0)  {  // {"ATK-DP100"}}
+    {
+        while (true)  {  // {"TK-DP100"}}
+        {
+            sub_6e14();
+            _fsub_s_rmm(-(_fmul_s_rmm(arg17, arg22)), arg22);
+
+            if (arg2 != 0)  {  // {"ATK-DP100"}}
+            {
+                if (arg2 == 0)  {  // {"ATK-DP100"}}
+                    /* undefined */;
+
+                /* undefined */;
+            }
+
+            _fadd_s_rmm(-(_fmul_s_rmm(arg11, arg24)), arg24);
+
+            if (arg16 == 0)  {  // {"ATK-DP100"}}
+                break;
+
+            if (arg16 != 0)  {  // {"ATK-DP100"}}
+            {
+                *(arg2 + 0x50) = arg18;
+                _fsub_s_rne(-(_fmul_s_rne(arg23, arg15)), arg15);
+                *(arg1 + 0x14) = arg13;
+
+                if (arg1 != 0)  {  // {"ATK-DP100"}}
+                    /* undefined */;
+
+                /* undefined */;
+            }
+
+            *(arg1 + 0x10) = arg18;
+
+            if (arg2 == 0)  {  // {"ATK-DP100"}}
+            {
+                int32_t ft6 = arg_0;
+                *arg5 = arg19;
+                void* ra;
+                *(ra - 0xcb);
+                arg5[4];  {  // {"DP100"}}
+                *(arg5 + 0x24) = arg10;
+                void* tp;
+                *(tp - 0x290);
+                arg_c0 = ft6;
+                /* undefined */;
+            }
+
+            if (arg2 == 0)  {  // {"ATK-DP100"}}
+            {
+                if (arg16 == 0)  {  // {"ATK-DP100"}}
+                    /* undefined */;
+
+                *(arg2 + 0x50) = arg8;
+                *((&arg_0 << 8) + 0x88) = arg20;
+                /* undefined */;
+            }
+
+            int32_t t1;
+            arg_44 = t1;
+        }
+    }
+
+    *(arg2 + 0x60) = arg9;
+    /* undefined */;
+}
+
+int32_t sub_688c()
+{
+    /* undefined */;
+}
+
+int32_t sub_696e()
+{
+    /* undefined */;
+}
+
+int32_t sub_699a()
+{
+    /* undefined */;
+}
+
+int32_t sub_69b2()
+{
+    sub_71ae();
+    /* undefined */;
+}
+
+int32_t sub_69ba(void* arg1, int32_t arg2, int32_t arg3 @ s1)
+{
+    *(arg1 + 0x48) = arg2;
+
+    if (arg3 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    /* tailcall */
+    return sub_699a();
+}
+
+int32_t sub_6c84()
+{
+    /* undefined */;
+}
+
+int32_t sub_6e14()
+{
+    /* undefined */;
+}
+
+int32_t sub_71ae(int32_t arg1)
+{
+    sub_6c84();
+    /* undefined */;
+}
+
+int32_t sub_72d2(int32_t, int32_t, int32_t, int32_t, int32_t arg5)
+{
+    /* undefined */;
+}
+
+int32_t sub_72dc(int32_t arg1, int32_t, int64_t* arg3, int32_t arg4, int32_t arg5, int32_t arg6, void* arg7 @ s0, int32_t arg8 @ s2, int32_t arg9, int32_t arg10)
+{
+    if (arg5 != 0)  {  // {"ATK-DP100"}}
+    {
+        *(arg8 + 0x271);
+        /* undefined */;
+    }
+
+    if (arg1 != 0)  {  // {"ATK-DP100"}}
+    {
+        *arg3;
+        *(arg7 + 0x14);
+        /* jump -> &data_56 */
+    }
+
+    if (arg9 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *(arg3 + 0x7c);
+    int32_t fa6;
+    arg_a0 = fa6;
+    *(arg3 + 0x5c);
+    /* undefined */;
+}
+
+int32_t sub_76c0(int32_t arg1, void* arg2, int32_t arg3, int32_t arg4, int32_t arg5, int64_t @ fa0, int64_t @ fa1, int64_t arg8 @ fa2, int32_t arg9 @ s8)
+{
+    *(arg2 + 0x78) = arg8;
+    /* tailcall */
+    return sub_72d2(arg1, arg2, arg3, arg4, arg5);
+}
+
+int32_t sub_76d0(int32_t arg1, void* arg2, int64_t arg3 @ fa0, int64_t arg4 @ fa1, int64_t arg5 @ fa2, int32_t arg6)
+{
+    *(arg2 + 0x78) = arg5;
+    /* tailcall */
+    return sub_72dc();
+}
+
+int32_t sub_8d0c(int32_t, int32_t, int32_t arg3, void* arg4 @ s0, int32_t arg5)
+{
+    *(arg4 + 0x60) = arg3;
+    /* undefined */;
+}
+
+int32_t sub_8fca(int32_t, int32_t, void* arg3, int64_t @ fa0, int64_t @ fa1, int64_t @ fa2, int64_t @ fa3, int32_t arg8 @ fa4, int32_t arg9)
+{
+    *(arg3 + 0x38) = arg8;
+    /* undefined */;
+}
+
+int32_t sub_9034(int32_t, int32_t, int32_t, int32_t arg4, int32_t arg5 @ t0, int64_t arg6)
+{
+    if (arg4 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    /* undefined */;
+}
+
+int32_t sub_9282()
+{
+    sub_9034();
+    /* undefined */;
+}
+
+int32_t sub_92f2()
+{
+    /* undefined */;
+}
+
+int32_t sub_930a(int32_t arg1, void* arg2, int32_t arg3, int32_t arg4, void* arg5, void* arg6, int32_t arg7 @ s0, int64_t arg8)
+{
+    *(arg5 + 0x58) = arg7;
+    int32_t s1;
+    int32_t fs0;
+    sub_9954(arg1, arg2, arg3, arg4, arg5, arg6, arg7, s1, fs0);
+    arg_9c = s1;
+    *(arg2 + 0x40);
+    /* undefined */;
+}
+
+int32_t sub_93c4(int32_t arg1)
+{
+    /* tailcall */
+    return sub_8d0c();
+}
+
+int32_t sub_948c(void* arg1, int32_t arg2, void* arg3, int32_t arg4, void* arg5, void* arg6, int32_t arg7, int32_t arg8 @ fa0, int64_t arg9 @ fa1, int64_t arg10 @ fa2, int64_t arg11 @ fa3, int64_t arg12 @ fa4, int64_t arg13 @ fa5, int64_t arg14 @ fa6, int32_t arg15 @ fa7, int32_t arg16 @ t1, int32_t arg17 @ t2, int32_t arg18 @ s10, int32_t arg19 @ s11, void* arg20 @ t5, int32_t arg21 @ t6, int32_t arg22)
+{
+    int32_t t3 = 0x20209000;
+    int32_t fa1 = *(arg5 + 0x80);
+    *(arg5 + 0x90);
+    int64_t* s0 = &arg_8;
+    void* a3 = &arg_b8;
+    sub_94ae(arg1, arg2, arg3, a3, arg5, arg6, arg7, arg8, fa1, arg10, arg11, arg12, *(arg6 + 0xb0), arg14, arg15, arg16, arg17, s0, arg19, 0x20209000, arg20, arg21);
+    *(arg20 - 0x3d0) = arg17;
+    *(arg5 - 0x2f0) = arg18;
+    *(arg5 - 0x350) = arg19;
+    *(arg20 - 0x330) = arg21;
+    int32_t i = sub_9714(arg1, arg2);
+
+    if (arg5 == 0)  {  // {"ATK-DP100"}}
+    {
+        sub_9724((arg1 - 0x19));
+        *(arg1 + 0x2b) = arg22;
+        sub_97a4((arg1 - 0x32));
+        i_1 = i;
+        arg1 -= 0x4b;
+        *(arg5 + 0x18);
+    }
+
+    arg_1c0 = arg8;
+    sub_9bfc();
+    arg_12c = &arg_2a0;
+    sub_9c7c((arg1 - 0x32), i, arg3, a3, arg5, &arg_2a0, arg16, s0, arg19);
+    sub_9c8c((arg1 - 0x32), i, arg3, &arg_48, arg5, &arg_2a0);
+    j_sub_9bea();
+    arg_fc = &arg_88;
+    sub_92f2();
+    int32_t sp = (&arg_2 << 2);  {  // {"K-DP100"}}
+    *(sp + 0xe8) = fa1;
+    sub_9282();
+    int32_t sp_2 = ((sp + 2) << 2);  {  // {"K-DP100"}}
+    *(sp_2 + 0xc8) = arg16;
+    sub_930a();
+    *(sp_2 + 0xfa) = arg17;
+    int32_t fs0_1 = arg_8;
+    *(arg1 + 0xb6) = arg10;
+    void* s1 = *(arg3 + 8);
+    *0x7def709d = fs0_1;
+    *(sp_2 + 0x100) = arg15;
+
+    do
+    {
+        *(arg1 - 0x32);
+
+        if (arg1 == 0x32)
+            /* undefined */;
+
+        *(sp_2 + 0xa4) = 0;  {  // {"ATK-DP100"}}
+        t3 -= 0x13;
+        *(arg1 + 0xc6) = arg10;
+        *0x7def708d;
+        *(s1 + 0x64) = &arg_2a0;
+        arg_310 = arg10;
+    } while (i != 0);  {  // {"ATK-DP100"}}
+
+    if (arg5 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    /* undefined */;
+}
+
+int32_t sub_94ae(void* arg1, int32_t arg2, void* arg3, void* arg4, void* arg5, int32_t arg6, int32_t arg7, int32_t arg8 @ fa0, int32_t arg9 @ fa1, int64_t arg10 @ fa2, int64_t @ fa3, int64_t @ fa4, int64_t @ fa5, int64_t @ fa6, int32_t arg15 @ fa7, int32_t arg16 @ t1, int32_t arg17 @ t2, int64_t* arg18 @ s0, int32_t arg19 @ s11, int32_t arg20 @ t3, void* arg21 @ t5, int32_t arg22 @ t6)
+{
+    *(arg5 - 0x350) = arg19;
+    *(arg21 - 0x330) = arg22;
+    int32_t fs0 = arg18[0xa];
+    int32_t i = sub_9714(arg1, arg2);
+
+    if (arg5 == 0)  {  // {"ATK-DP100"}}
+    {
+        sub_9724((arg1 - 0x19));
+        *(arg1 + 0x2b) = fs0;
+        sub_97a4((arg1 - 0x32));
+        i_1 = i;
+        arg1 -= 0x4b;
+        *(arg5 + 0x18);
+    }
+
+    arg_1c0 = arg8;
+    sub_9bfc();
+    *(arg4 + 0x74) = &arg_2a0;
+    sub_9c7c((arg1 - 0x32), i, arg3, arg4, arg5, &arg_2a0, arg16, arg18, arg19);
+    sub_9c8c((arg1 - 0x32), i, arg3, &arg_48, arg5, &arg_2a0);
+    j_sub_9bea();
+    arg_fc = &arg_88;
+    sub_92f2();
+    int32_t sp = (&arg_2 << 2);  {  // {"K-DP100"}}
+    *(sp + 0xe8) = arg9;
+    sub_9282();
+    int32_t sp_2 = ((sp + 2) << 2);  {  // {"K-DP100"}}
+    *(sp_2 + 0xc8) = arg16;
+    sub_930a();
+    *(sp_2 + 0xfa) = arg17;
+    int32_t fs0_1 = *arg18;
+    *(arg1 + 0xb6) = arg10;
+    void* s1 = *(arg3 + 8);
+    *0x7def709d = fs0_1;
+    *(sp_2 + 0x100) = arg15;
+
+    do
+    {
+        *(arg1 - 0x32);
+
+        if (arg1 == 0x32)
+            /* undefined */;
+
+        *(sp_2 + 0xa4) = 0;  {  // {"ATK-DP100"}}
+        arg20 -= 0x13;
+        *(arg1 + 0xc6) = arg10;
+        *0x7def708d;
+        *(s1 + 0x64) = &arg_2a0;
+        arg_310 = arg10;
+    } while (i != 0);  {  // {"ATK-DP100"}}
+
+    if (arg5 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    /* undefined */;
+}
+
+int32_t sub_9714(int32_t arg1, int32_t arg2)
+{
+    /* tailcall */
+    return sub_8fca(arg1, arg2);
+}
+
+int32_t sub_9724(int32_t arg1)
+{
+    /* undefined */;
+}
+
+int32_t sub_97a4(int32_t, void* arg2, int32_t arg3, int32_t, int32_t* arg5, int64_t @ fa0, int64_t arg7 @ fa1, int32_t arg8 @ t0, void* arg9 @ s0, int64_t arg10 @ fs0, int64_t arg11)
+{
+    *arg5;
+    *arg5 = arg8;
+    *(arg9 + 0x20) = arg10;
+    *(arg2 + 0x58) = arg7;
+    /* undefined */;
+}
+
+int32_t sub_9954(int32_t, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5, void* arg6, int32_t arg7 @ s0, int32_t arg8 @ s1, int32_t arg9 @ fs0)
+{
+    int32_t fs3;
+    arg_dc = fs3;
+    *(arg6 + 0x5c) = arg9;
+
+    if (arg2 != 0)  {  // {"ATK-DP100"}}
+        arg_e4 = arg3;
+    else
+    {
+        *(arg6 + 0x5c) = arg9;
+
+        if ((arg4 & 0xfffffff1) == 0)  {  // {"ATK-DP100"}}
+        {
+            *(arg6 + 0x6c) = arg9;
+            arg_c = fs3;
+            *(arg6 + 0x5c) = arg9;
+
+            if (arg2 != 0)  {  // {"ATK-DP100"}}
+                /* undefined */;
+
+            *(arg6 + 0x5c) = arg9;
+            /* undefined */;
+        }
+    }
+
+    /* undefined */;
+}
+
+int32_t sub_9bea()
+{
+    /* undefined */;
+}
+
+int32_t sub_9bfc()
+{
+    /* undefined */;
+}
+
+int32_t j_sub_9bea()
+{
+    /* tailcall */
+    return sub_9bea();
+}
+
+int32_t sub_9c7c(int32_t arg1, int32_t arg2, void* arg3, void* arg4, int32_t arg5, void* arg6, int32_t arg7 @ t1, int32_t arg8 @ s0, int32_t arg9 @ s11)
+{
+    if (arg1 != 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    if (arg2 != 0)  {  // {"ATK-DP100"}}
+    {
+        *(arg6 + 0x5c) = *(arg3 + 0x40);
+        /* tailcall */
+        return sub_9c8c(arg1, arg2, arg3, arg4, arg5, arg6);
+    }
+
+    *(arg4 + 0x1c) = arg8;
+    /* undefined */;
+}
+
+int32_t sub_9c8c(int32_t, int32_t, int32_t, int32_t, int32_t, int32_t arg6)
+{
+    /* undefined */;
+}
+
+int32_t sub_a6e6()
+{
+    /* undefined */;
+}
+
+int32_t j_sub_a6e6()
+{
+    /* tailcall */
+    return sub_a6e6();
+}
+
+int32_t sub_b2ee(int32_t, int32_t, void* arg3, int32_t, int32_t, void* arg6)
+{
+    *(arg3 + 0x38);
+    *(arg6 + 0x4c);
+    /* undefined */;
+}
+
+int32_t sub_bf90(int32_t arg1 @ s3)
+{
+    /* jump -> arg1 */
+}
+
+int32_t sub_c9ae(int32_t arg1, int32_t, int64_t* arg3, int32_t arg4 @ t1, int64_t arg5)
+{
+    if (arg3 == 0)  {  // {"ATK-DP100"}}
+    {
+        *arg3;
+        int64_t var_53;
+        /* jump -> *(&var_53 << 0x1f) */
+    }
+
+    *arg3;
+    /* undefined */;
+}
+
+int32_t sub_d96a(int32_t arg1, int32_t arg2, void* arg3, int32_t arg4, int32_t, int32_t, int32_t arg7, int32_t arg8 @ s0, int64_t arg9 @ ft4, void* arg10, int32_t arg11, int32_t arg12, int32_t arg13, int32_t arg14, int64_t arg15, int32_t arg16, void* arg17)
+{
+    *(arg8 << 1) = &arg_200;  {  // {"TK-DP100"}}
+    arg_30 = arg9;
+    *(arg10 + 0x4c);
+    int64_t fa0;
+    arg_38 = fa0;
+    *(arg3 + 0x10);
+    *(arg17 + 0x5c);
+    *(*(arg17 + 0x14) + 0x68);
+    /* undefined */;
+}
+
+int32_t sub_dc6a()
+{
+    /* undefined */;
+}
+
+int32_t sub_dc6e()
+{
+    /* undefined */;
+}
+
+int32_t sub_dc70(int32_t, int32_t, int32_t, int32_t, void* arg5)
+{
+    *(arg5 + 0x38);
+    /* undefined */;
+}
+
+int32_t sub_dc7c(void* arg1, int64_t @ fa0, int64_t @ fa1, int64_t @ fa2, int64_t @ fa3, int32_t arg6 @ fa4)
+{
+    *(arg1 + 0x74) = arg6;
+    *(arg1 + 0x74) = arg6;
+    /* undefined */;
+}
+
+int32_t sub_dc86()
+{
+    /* undefined */;
+}
+
+int32_t sub_dc96()
+{
+    /* undefined */;
+}
+
+int32_t sub_dcaa(void* arg1 @ s0)
+{
+    *(arg1 + 0x64);
+    /* undefined */;
+}
+
+int32_t sub_de26(int32_t arg1, int32_t arg2, void* arg3, int32_t arg4 @ t4)
+{
+    int32_t a5;
+    int32_t a6;
+    /* tailcall */
+    return sub_d96a((arg1 >> 0x24), arg2, arg3, 9, &arg_160, a5, a6, &arg_124);
+}
+
+int32_t sub_de8a(void* arg1, void* arg2 @ t1)
+{
+    *(arg1 + 0x10);
+    *(arg2 + 0x10);
+    /* undefined */;
+}
+
+int32_t sub_debc()
+{
+    /* undefined */;
+}
+
+int32_t sub_df6c()
+{
+    /* undefined */;
+}
+
+int32_t sub_dfba(int64_t* arg1)
+{
+    *arg1;
+    _fence(0xffffffa1);
+    /* undefined */;
+}
+
+int32_t sub_e000(int32_t arg1, int32_t arg2, void* arg3)
+{
+    *(arg3 + 0x14);
+    /* tailcall */
+    return sub_e004(arg1, arg2, arg3);
+}
+
+int32_t sub_e004(int32_t, int32_t, void* arg3)
+{
+    *(arg3 + 0x14);
+    /* undefined */;
+}
+
+int32_t j_sub_e000(int32_t arg1, int32_t arg2, void* arg3)
+{
+    /* tailcall */
+    return sub_e000(arg1, arg2, arg3);
+}
+
+int32_t j_sub_e004(int32_t arg1, int32_t arg2, void* arg3)
+{
+    /* tailcall */
+    return sub_e004(arg1, arg2, arg3);
+}
+
+int32_t sub_e07e()
+{
+    /* undefined */;
+}
+
+int32_t sub_e0a4(int32_t arg1, void* arg2, void* arg3, void* arg4, int32_t arg5, void* arg6, int64_t @ fa0, int64_t @ fa1, int64_t @ fa2, int64_t @ fa3, int64_t @ fa4, int32_t arg12 @ fa5, int32_t arg13 @ s0, int32_t arg14 @ s9)
+{
+    *(arg3 + 0x74) = arg12;
+    arg_c = arg5;
+    arg_fc = arg13;
+
+    if (arg3 == 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_debc();
+
+    arg_c = arg5;
+    void* s1;
+    int32_t s8;
+    int32_t t6;
+    int64_t ft3;
+    int32_t ft5;
+    /* tailcall */
+    return sub_e0b2(arg1, arg2, arg3, arg4, arg5, arg6, arg13, s1, s8, t6, ft3, ft5);
+}
+
+int32_t sub_e0b2(int32_t arg1, void* arg2, int32_t, void* arg4, int32_t arg5, void* arg6, int32_t arg7 @ s0, void* arg8 @ s1, int32_t arg9 @ s8, int32_t arg10 @ t6, int64_t arg11 @ ft3, int32_t arg12 @ ft5)
+{
+    arg_c = arg5;
+    arg_c = arg5;
+    int32_t s8_1 = ((arg7 * 2) + arg9);  {  // {"K-DP100"}}
+    *(arg6 + 0x78) = arg1;
+    int32_t a7;
+    arg_4c = a7;
+    *(arg8 + 0xc) = arg8;
+    *(arg4 + 0xc) = arg8;
+    *(arg8 + 0xc) = arg8;
+    *(arg4 + 0xc) = arg8;
+    arg_8 = arg12;
+
+    if (arg4 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    arg_8 = arg12;
+    arg_4c = arg7;
+    arg_4c = arg7;
+label_e0d4:
+    arg_8 = arg11;
+label_e0d8:
+    arg_8 = arg11;
+
+    while (arg4 != 0)  {  // {"ATK-DP100"}}
+    {
+    label_e0dc:
+        s8_1 += arg7;
+
+        while (true)  {  // {"TK-DP100"}}
+        {
+            if (arg4 != 0)  {  // {"ATK-DP100"}}
+                /* undefined */;
+
+        label_e148:
+
+            if (arg2 != 0)  {  // {"ATK-DP100"}}
+                goto label_e0d4;
+
+            if (arg2 != 0)  {  // {"ATK-DP100"}}
+                goto label_e0d8;
+
+            if (arg2 != 0)  {  // {"ATK-DP100"}}
+                goto label_e0d8;
+
+            if (arg2 != 0)  {  // {"ATK-DP100"}}
+                break;
+
+            if (arg2 != 0)  {  // {"ATK-DP100"}}
+                goto label_e0dc;
+
+            if (arg2 == 0)  {  // {"ATK-DP100"}}
+                /* undefined */;
+        }
+    }
+
+    *(arg2 + 0x44);
+    goto label_e148;
+}
+
+int32_t j_sub_df6c()
+{
+    /* tailcall */
+    return sub_df6c();
+}
+
+int32_t sub_e0f8(int32_t arg1 @ s1)
+{
+    int32_t a4;
+    arg_fc = a4;
+    /* undefined */;
+}
+
+int32_t j_sub_de8a(void* arg1, void* arg2 @ t1)
+{
+    /* tailcall */
+    return sub_de8a(arg1, arg2);
+}
+
+int32_t sub_e19a(int32_t arg1 @ t1, int32_t arg2 @ s3)
+{
+    /* undefined */;
+}
+
+int32_t sub_e1a0(int32_t arg1 @ t1)
+{
+    /* jump -> arg1 */
+}
+
+int32_t sub_e1ea()
+{
+    /* tailcall */
+    return sub_e1ee();
+}
+
+int32_t sub_e1ee()
+{
+    /* tailcall */
+    return sub_e1f2();
+}
+
+int32_t sub_e1f2()
+{
+    /* tailcall */
+    return sub_e1f6();
+}
+
+int32_t sub_e1f6()
+{
+    /* tailcall */
+    return sub_e1fa();
+}
+
+int32_t sub_e1fa()
+{
+    /* tailcall */
+    return sub_e1fe();
+}
+
+int32_t sub_e1fe(int32_t, int32_t, int32_t arg3, int32_t, void* arg5, int32_t* arg6 @ s1, void* arg7 @ s8, int32_t arg8, int32_t arg9, int32_t arg10)
+{
+    *(arg7 + 0x7f3);
+    *(*arg6 + 4);  {  // {"DP100"}}
+    **(*(arg5 + 0x1c) + 4);  {  // {"DP100"}}
+    *(arg5 + 0x78);
+    /* undefined */;
+}
+
+int32_t sub_e202(int32_t, int32_t, int32_t, int32_t, void* arg5, void* arg6 @ s0)
+{
+    *(arg5 + 0x78);
+    /* tailcall */
+    return sub_e206(*(arg6 + 4));  {  // {"DP100"}}
+}
+
+int32_t sub_e206(void* arg1 @ s0, int32_t arg2)
+{
+    *(arg1 + 4);  {  // {"DP100"}}
+    /* tailcall */
+    return sub_e20a();
+}
+
+int32_t sub_e20a(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, void* arg5, int32_t arg6, int32_t arg7)
+{
+    int32_t* s1;
+    /* tailcall */
+    return sub_e20e(arg1, arg2, arg3, arg4, arg5, s1);
+}
+
+int32_t sub_e20e(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, void* arg5, int32_t* arg6 @ s1)
+{
+    *arg6;
+    /* tailcall */
+    return sub_e212(arg1, arg2, arg3, arg4, arg5, arg6);
+}
+
+int32_t sub_e212(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, void* arg5, int32_t* arg6 @ s1)
+{
+    *arg6;
+    /* tailcall */
+    return sub_e216(arg1, arg2, arg3, arg4, arg5, arg6);
+}
+
+int32_t sub_e216(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, void* arg5, int32_t* arg6 @ s1)
+{
+    /* tailcall */
+    return sub_e21a(arg1, arg2, arg3, arg4, arg5, *arg6, arg6);
+}
+
+int32_t sub_e21a(int32_t arg1, int32_t arg2, int32_t arg3, int32_t arg4, void* arg5, void* arg6 @ s0, void* arg7 @ s1)
+{
+    *(arg6 + 4);  {  // {"DP100"}}
+    *(arg7 + 0x24);
+    /* tailcall */
+    return sub_e21e(arg1, arg2, arg3, arg4, arg5);
+}
+
+int32_t sub_e21e(int32_t, int32_t, int32_t, int32_t, void* arg5)
+{
+    **(*(arg5 + 0x1c) + 4);  {  // {"DP100"}}
+    *(arg5 + 0x78);
+    /* undefined */;
+}
+
+int32_t sub_e31c(int32_t arg1 @ s5)
+{
+    /* undefined */;
+}
+
+int32_t sub_e384()
+{
+    /* undefined */;
+}
+
+int32_t sub_e39c()
+{
+    arg_c4 = &arg_c4;
+    /* tailcall */
+    return sub_e3a2();
+}
+
+int32_t sub_e3a2()
+{
+    arg_c4 = &arg_c4;
+    /* undefined */;
+}
+
+int32_t sub_e3b4()
+{
+    /* undefined */;
+}
+
+int32_t sub_e3b6()
+{
+    /* undefined */;
+}
+
+int32_t sub_e3d8(int64_t* arg1, void* arg2 @ s1, int32_t arg3)
+{
+    void* ra;
+    *(ra + 0x7c);
+    int32_t* s0;
+    void* a1;
+    int32_t a2;
+    void* a3;
+    int32_t a4;
+    void* a5;
+
+    if (arg2 != 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_e3de(arg1, a1, a2, a3, a4, a5, s0, arg2);
+
+    arg1[4];  {  // {"DP100"}}
+    int32_t s8;
+    int32_t t6;
+    int64_t ft3;
+    int32_t ft5;
+    /* tailcall */
+    return sub_e0b2(arg1, a1, a2, a3, a4, a5, s0, arg2, s8, t6, ft3, ft5);
+}
+
+int32_t sub_e3de(int64_t* arg1, void* arg2, int32_t arg3, void* arg4, int32_t arg5, void* arg6, int32_t* arg7 @ s0, void* arg8 @ s1)
+{
+    void* ra;
+    *(ra + 0x7c);
+    int32_t s8;
+    int32_t t6;
+    int64_t ft3;
+    int32_t ft5;
+
+    if (arg8 == 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_e0b2(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, s8, t6, ft3, ft5);
+    *(arg8 + 4) = arg7;  {  // {"DP100"}}
+    *(arg8 + 4) = arg6;  {  // {"DP100"}}
+    int64_t fs0;
+    /* tailcall */
+    return sub_e3e8(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, fs0);
+}
+
+int32_t sub_e3e8(int64_t* arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5, int32_t arg6, int32_t* arg7 @ s0, void* arg8 @ s1, int64_t arg9 @ fs0)
+{
+    *(arg8 + 0x3c) = arg7;
+    *arg7 = arg7;
+    *(arg8 + 4) = arg6;  {  // {"DP100"}}
+    *(arg8 + 0x3c) = arg7;
+    *(arg8 + 0xa0) = arg9;
+    void* s9;
+    /* tailcall */
+    return sub_e3f2(arg1, arg2, arg3, arg4, arg5, arg6, arg8, s9, arg9);
+}
+
+int32_t sub_e3f2(int64_t* arg1, int32_t, int32_t arg3, int32_t, int32_t, int32_t arg6, void* arg7 @ s1, void* arg8 @ s9, int64_t arg9 @ fs0)
+{
+    *(arg7 + 4) = arg6;  {  // {"DP100"}}
+    *(arg7 + 0x78) = arg3;
+    *(arg7 + 0xa0) = arg9;
+    *(arg7 + 4) = arg6;  {  // {"DP100"}}
+    *(arg7 + 0x78) = arg3;
+    arg1[4] = arg9;  {  // {"DP100"}}
+
+    if (arg7 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    arg1[4] = arg9;  {  // {"DP100"}}
+
+    if (arg7 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    *(arg8 + 0x7d);
+    /* tailcall */
+    return sub_dfba(arg1);
+}
+
+int32_t sub_e412(void* arg1, void* arg2, int32_t arg3)
+{
+    *(arg1 + 0x20);
+    int32_t s0;
+    void* s1;
+    int32_t a4;
+    void* a5;
+    int32_t s8;
+    int32_t t6;
+    int64_t ft3;
+    int32_t ft5;
+    /* tailcall */
+    return sub_e0b2(arg1, arg2, arg3, 0xfffe2000, a4, a5, s0, s1, s8, t6, ft3, ft5);
+}
+
+int32_t sub_e460(void* arg1 @ s0)
+{
+    *(arg1 + 0x30);
+    *(sub_e466() + 0x39c) = 0;  {  // {"ATK-DP100"}}
+    sub_dc6a();
+    char ra;
+    void* a0_1;
+    int32_t a1;
+    int32_t a2;
+    int32_t a3;
+    void* a4;
+    int64_t fa0;
+    int64_t fa1;
+    int64_t fa2;
+    int64_t fa3;
+    int32_t fa4;
+    a0_1 = sub_e992();
+    sub_dc6e();
+    sub_dc70(a0_1, a1, a2, a3, a4);
+    void* gp;
+    *(gp + 0x306) = ra;
+    sub_dc86();
+    sub_dc7c(a0_1, fa0, fa1, fa2, fa3, fa4);
+    /* tailcall */
+    return sub_dcaa(&arg_188);
+}
+
+int32_t sub_e466()
+{
+    sub_dc96();
+    sub_dc6a();
+    char ra;
+    void* a0;
+    int32_t a1;
+    int32_t a2;
+    int32_t a3;
+    void* a4;
+    int64_t fa0;
+    int64_t fa1;
+    int64_t fa2;
+    int64_t fa3;
+    int32_t fa4;
+    a0 = sub_e992();
+    sub_dc6e();
+    sub_dc70(a0, a1, a2, a3, a4);
+    void* gp;
+    *(gp + 0x306) = ra;
+    sub_dc86();
+    sub_dc7c(a0, fa0, fa1, fa2, fa3, fa4);
+    /* tailcall */
+    return sub_dcaa(&arg_188);
+}
+
+int32_t sub_e658(int64_t arg1)
+{
+    int32_t a5;
+    arg_c = a5;
+    int32_t t1;
+    int32_t s3;
+    /* tailcall */
+    return sub_e19a(t1, s3);
+}
+
+int32_t sub_e67e(int64_t arg1)
+{
+    /* tailcall */
+    return sub_e680();
+}
+
+int32_t sub_e680()
+{
+    /* undefined */;
+}
+
+int32_t sub_e682()
+{
+    /* undefined */;
+}
+
+int32_t sub_e684()
+{
+    /* undefined */;
+}
+
+int32_t sub_e68a(void* arg1, void* arg2, int32_t arg3, int32_t arg4, void* arg5, void* arg6, int32_t arg7, int32_t arg8 @ fa0, int32_t arg9 @ s0, void* arg10 @ s1, int32_t arg11 @ fs0)
+{
+    *(arg5 + 0x38) = arg9;
+    *(arg6 + 0x7c) = arg1;
+
+    if (arg10 == 0)  {  // {"ATK-DP100"}}
+    {
+        *(arg10 + 0x44) = arg11;
+        /* tailcall */
+        return sub_e692(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg10);
+    }
+
+    *(arg1 + 0x1c);
+    /* undefined */;
+}
+
+int32_t sub_e692(void* arg1, void* arg2, int32_t arg3, int32_t arg4, void* arg5, void* arg6, int32_t arg7, int32_t arg8 @ fa0, void* arg9 @ s1)
+{
+    *(arg9 + 0x44) = arg8;
+    /* tailcall */
+    return sub_e694(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+}
+
+int32_t sub_e694(void* arg1, void* arg2, int32_t arg3, int32_t arg4, void* arg5, void* arg6, int32_t arg7)
+{
+    *(arg6 + 0x7c) = arg3;
+    int32_t s0;
+    void* s1;
+    int32_t fs0;
+    /* tailcall */
+    return sub_e696(arg1, arg2, arg3, arg4, arg5, arg6, arg7, s0, s1, fs0);
+}
+
+int32_t sub_e696()
+Loading...
+
+int32_t sub_e69c(int32_t, void* arg2, int32_t, int32_t, void* arg5, int32_t arg6 @ s0, void* arg7 @ s1, int32_t arg8 @ fs0)
+{
+    *(arg5 + 0x38) = arg6;
+    *(arg2 + 0x44);
+    *(arg7 + 0x64) = arg8;
+    /* undefined */;
+}
+
+int32_t sub_e6a4(int32_t* arg1, void* arg2, void* arg3, int32_t arg4, void* arg5, int32_t arg6, int32_t arg7, int32_t arg8 @ s0, int32_t* arg9 @ s1, int32_t arg10 @ fs0)
+{
+    arg1[0xe] = arg8;
+    *arg1 = arg10;
+
+    if (arg6 != 0)  {  // {"ATK-DP100"}}
+        /* tailcall */
+        return sub_e680();
+
+    if (arg9 == 0)  {  // {"ATK-DP100"}}
+        arg1[0x1c] = arg8;
+
+    arg1[0x11] = arg10;
+    /* tailcall */
+    return sub_e6b0(arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg9);
+}
+
+int32_t sub_e6b0()
+Loading...
+
+int32_t sub_e6ba(void* arg1, void* arg2, int32_t arg3, int32_t arg4, void* arg5, int32_t arg6, int32_t arg7, int64_t @ fa0, int64_t @ fa1, int32_t arg10 @ fa2, void* arg11 @ s1, int64_t arg12 @ fs0)
+{
+    *(arg11 + 4) = arg10;  {  // {"DP100"}}
+    *(arg1 + 0xc0) = arg12;
+    /* tailcall */
+    return sub_e6be(arg1, arg2, arg3, arg4, arg5, arg6, arg7);
+}
+
+int32_t sub_e6be(void* arg1, void* arg2, int32_t arg3, int32_t arg4, void* arg5, int32_t arg6, int32_t arg7)
+{
+    void* s1;
+    int32_t fs0;
+    int32_t fs1;
+    /* tailcall */
+    return sub_e6c0(arg1, arg2, arg3, arg4, arg5, arg6, arg7, &arg_4c, s1, fs0, fs1);
+}
+
+int32_t sub_e6c0()
+Loading...
+
+int32_t sub_e6c4(int32_t, int32_t, int32_t, int32_t, void* arg5, int32_t arg6 @ fs0)
+{
+    *(arg5 + 0x38) = arg6;
+    /* undefined */;
+}
+
+int32_t sub_e6ca(int32_t, int32_t, void* arg3, int32_t arg4 @ fs0)
+{
+    *(arg3 + 0x38) = arg4;
+    *0xfffff800;
+    /* undefined */;
+}
+
+int32_t sub_e6d4(void* arg1 @ s0, int32_t arg2 @ fs0)
+{
+    *(arg1 + 0x38) = arg2;
+    _fence(0xffffff00);
+    /* tailcall */
+    return sub_e6da();
+}
+
+int32_t sub_e6da()
+{
+    *0xffffff00;
+    /* tailcall */
+    return sub_e6de();
+}
+
+int32_t sub_e6de()
+{
+    /* undefined */;
+}
+
+int32_t sub_e706()
+{
+    /* undefined */;
+}
+
+int32_t sub_e710()
+{
+    /* undefined */;
+}
+
+int32_t j_sub_e31c(int32_t arg1 @ s5)
+{
+    /* tailcall */
+    return sub_e31c(arg1);
+}
+
+int32_t sub_e992(int32_t arg1, int32_t arg2, void* arg3, int32_t arg4, void* arg5, int32_t arg6, int32_t arg7, int32_t arg8 @ t0, int32_t arg9 @ t1, int32_t* arg10 @ s0, int32_t arg11 @ s1, int32_t arg12 @ s4, int32_t arg13 @ s5, int32_t arg14 @ s6, int32_t arg15 @ t3, double arg16 @ ft2, double arg17 @ ft8, int64_t arg18, int32_t arg19, int32_t arg20)
+{
+    if (0 < arg7)  {  // {"ATK-DP100"}}
+    {
+        if (arg11 == 0)  {  // {"ATK-DP100"}}
+        {
+            arg_c4 = arg13;
+            /* undefined */;
+        }
+
+        *(arg5 + 0x14);
+
+        if (arg9 < arg12)
+            /* jump -> 0xf674 */
+
+        /* undefined */;
+    }
+
+    if (arg9 < arg14)
+        /* undefined */;
+
+    if (arg15 < arg14)
+        /* tailcall */
+        return j_sub_ecb8();
+
+    if (arg9 < arg14)
+    {
+        if (arg11 != 0)  {  // {"ATK-DP100"}}
+            /* undefined */;
+
+        arg_c4 = arg13;
+        /* undefined */;
+    }
+
+    if (arg9 < arg14)
+        /* undefined */;
+
+    if (arg5 < arg8)
+    {
+        if (arg14 >= arg8)
+            /* undefined */;
+
+        if (arg11 != 0)  {  // {"ATK-DP100"}}
+        {
+            *(arg3 + 0x10);
+            *(arg3 + 0x18);
+            0xffff334a(0x11, *arg10);
+            /* undefined */;
+        }
+
+        *(arg5 + 0x90);
+        _fsub_d_rup(-(_fmul_d_rup(arg17, arg16)), arg16);
+        sub_f264(&arg_10, arg2, arg3, arg4);
+    }
+
+    /* undefined */;
+}
+
+int32_t sub_ea94(int32_t* arg1, int32_t* arg2, int32_t arg3, int32_t* arg4, int64_t @ fa0, int64_t @ fa1, float arg7, int32_t* arg8 @ s1, double arg9 @ ft1, float arg10 @ ft7, double arg11 @ ft8, int32_t arg12)
+{
+    _fmul_d_rne(_fmul_d_rne(arg9, arg11), arg11);
+    _fmul_s_rne(_fmul_s_rne(arg10, arg7), arg7);
+
+    while (&arg_1c4 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    int32_t i = *arg2;
+    *arg1 = i;
+    *arg1 = i;
+
+    while (i == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    while (*arg2 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    *arg1 = *arg2;
+    int32_t i_1 = *arg8;
+    *arg1 = i_1;
+
+    while (i_1 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    *arg1 = i_1;
+
+    while (i_1 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    while (*arg2 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    int32_t i_2 = *arg2;
+    *arg1 = i_2;
+    *arg1 = i_2;
+
+    while (i_2 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    int32_t i_3 = *arg2;
+    *arg1 = i_3;
+
+    while (i_3 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    int32_t i_4 = *arg2;
+    *arg1 = i_4;
+
+    while (i_4 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    while (*arg2 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    int32_t i_5 = *arg2;
+    *arg1 = i_5;
+    *arg1 = i_5;
+
+    while (i_5 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    while (*arg2 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    int32_t i_6 = *arg2;
+    *arg1 = i_6;
+
+    while (i_6 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    int32_t i_7 = *arg2;
+    *arg1 = i_7;
+    *arg1 = i_7;
+
+    while (i_7 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    *arg1 = *arg2;
+    arg_80 = 0;  {  // {"ATK-DP100"}}
+    arg_80 = 0;  {  // {"ATK-DP100"}}
+
+    while (arg3 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    arg_80 = 0;  {  // {"ATK-DP100"}}
+
+    while (arg3 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    while (arg3 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    arg_80 = 0;  {  // {"ATK-DP100"}}
+    arg_80 = 0;  {  // {"ATK-DP100"}}
+    *arg4;
+
+    while (arg3 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    while (arg3 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    arg_80 = 0;  {  // {"ATK-DP100"}}
+
+    while (arg3 == 0)  {  // {"ATK-DP100"}}
+        /* nop */
+
+    arg_80 = 0;  {  // {"ATK-DP100"}}
+    arg_80 = 0;  {  // {"ATK-DP100"}}
+    /* undefined */;
+}
+
+int32_t sub_ecb8()
+{
+    /* undefined */;
+}
+
+int32_t j_sub_ecb8()
+{
+    /* tailcall */
+    return sub_ecb8();
+}
+
+int32_t sub_ee6e(void* arg1, int32_t arg2, int32_t arg3, int32_t arg4, int32_t arg5, int32_t arg6, int32_t arg7 @ s3, int32_t arg8 @ s4, void* arg9 @ s11, int32_t arg10)
+{
+    uint32_t a5 = (arg6 >> 6);
+
+    if (a5 == 0)  {  // {"ATK-DP100"}}
+        /* undefined */;
+
+    while (true)  {  // {"TK-DP100"}}
+    {
+        int32_t a2_1 = arg10;
+
+        if (a5 == 0)  {  // {"ATK-DP100"}}
+            break;
+
+        *(arg9 + 0x321) = arg4;
+        arg10 = arg7;
+        void* s0;
+        sub_f25a(arg1, arg2, s0, a2_1);
+        void* a4 = ((arg8 < 0x562) ? 1 : 0);  {  // {"ATK-DP100"}}  {  // {"TK-DP100"}}
+        *(arg1 + 0x20);
+        *(a4 + 0x68);
+        sub_ee7e();
+        *(a4 + 0x48);
+    }
+
+    /* undefined */;
+}
+
+int32_t sub_ee7e()
+{
+    /* undefined */;
+}
+
+int32_t sub_ef7a()
+{
+    /* undefined */;
+}
+
+int32_t sub_ef88()
+{
+    /* undefined */;
+}
+
+int32_t j_sub_ef7a()
+{
+    /* tailcall */
+    return sub_ef7a();
+}
+
+int32_t sub_f25a(int32_t, int32_t arg2, void* arg3 @ s0, int32_t arg4)
+{
+    *(arg3 + 0x14);
+    /* undefined */;
+}
+
+int32_t sub_f264(void* arg1, int32_t arg2, int32_t arg3, int32_t arg4)
+{
+    *(arg1 + 0xc);
+    /* undefined */;
+}
+

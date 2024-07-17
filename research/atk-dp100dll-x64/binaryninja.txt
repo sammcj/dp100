@@ -1,0 +1,954 @@
+int64_t sub_402000(int64_t, char* arg2, char arg3 @ rbx)
+{
+    char* rax;
+    rax = 0x89;
+    rax = (0x89 + *rax);
+    *rax = (*rax + rax);
+    *rax = (*rax + rax);
+    *rax = (*rax + rax);
+    *arg2 = (*arg2 + rax);
+    *0x1271413 = (*0x1271413 + rax);
+    arg2 = (arg2 + arg3);
+    /* undefined */;
+}
+
+int64_t sub_403701(int64_t arg1 @ rax)
+{
+    /* jump -> *arg1 */
+}
+
+int64_t sub_4061cb(int64_t, int32_t arg2, int64_t arg3 @ rax, int64_t arg4 @ rdi)
+{
+    int64_t var_8 = *(&__return_addr + arg3);
+    arg3 = (arg3 + arg2);
+    /* jump -> *(arg4 + -0xffffffff9ffffff0) */
+}
+
+int64_t sub_406203(int64_t arg1)
+{
+    int64_t var_8 = *-0xffffffff9f40620e;
+    bool z;
+    if ((z || arg1 != 1))
+    {
+        /* undefined */;
+    }
+    /* undefined */;
+}
+
+int64_t sub_40623f(int64_t arg1 @ rbp, char* arg2 @ rdi)
+{
+    int32_t* rax_1;
+    int64_t rcx;
+    int64_t rdx;
+    rax_1 = rdx();
+    uint64_t rax = (rax_1 + *rax_1);
+    *arg2 = (*arg2 + rax);
+    if (rcx == 0)
+    {
+        /* undefined */;
+    }
+    /* jump -> *((rax + (arg1 << 3)) + -ffffffffffffffff) */
+}
+
+int64_t sub_409514() __pure
+{
+    return;
+}
+
+int64_t sub_4095db(int64_t arg1 @ rax)
+{
+    /* jump -> *arg1 */
+}
+
+int64_t sub_409911() __pure
+{
+    return;
+}
+
+int64_t sub_40992d(int64_t arg1 @ rax)
+{
+    /* jump -> *arg1 */
+}
+
+int64_t sub_40b6bf(int64_t, int64_t* arg2)
+{
+    int64_t var_8 = *arg2;
+}
+
+int64_t sub_40b6c3(int64_t arg1 @ rbx)
+{
+    /* jump -> arg1 */
+}
+
+int64_t sub_40b987(int64_t* arg1 @ rbx)
+{
+    int64_t var_8 = *arg1;
+    /* undefined */;
+}
+
+int64_t sub_40b9ab()
+{
+    /* undefined */;
+}
+
+int64_t sub_40b9d7(int64_t, int64_t arg2)
+{
+    /* jump -> *(arg2 + -0xffffffffe7ffffdc) */
+}
+
+int64_t sub_40bbe7(int64_t arg1, int64_t arg2, int32_t arg3 @ rax, void* arg4 @ rbx)
+{
+    int64_t var_8 = *(arg4 + 0x77000007);
+    int32_t rflags;
+    __out_immb_oeax(0xff, arg3, rflags);
+    /* jump -> *(arg2 + (arg1 << 3)) */
+}
+
+int64_t sub_40bc27() __pure
+{
+    int64_t rcx;
+    int64_t var_8 = rcx;
+}
+
+int64_t sub_40bc33(int64_t arg1 @ rax)
+{
+    /* jump -> *arg1 */
+}
+
+int64_t sub_40bc67(void* arg1)
+{
+    int64_t var_8 = *(arg1 + 0x3500000e);
+}
+
+int64_t sub_40bcab(int64_t arg1 @ rax)
+{
+    /* jump -> *arg1 */
+}
+
+int64_t sub_40d187() __pure
+{
+    return;
+}
+
+void sub_40d18a(void* arg1 @ rbx) __noreturn
+{
+    *(arg1 + 0x380a0000) = (*(arg1 + 0x380a0000) - *arg1[1]);
+    trap(0xd);
+}
+
+int64_t sub_40d191() __pure
+{
+    return;
+}
+
+int64_t sub_40d197() __pure
+{
+    return;
+}
+
+int64_t sub_40d1a4(int64_t arg1 @ rax)
+{
+    /* jump -> *arg1 */
+}
+
+int64_t sub_40d325(char* arg1 @ rax, char arg2 @ rbx, void* arg3 @ rsi, long double arg4 @ st0)
+{
+    int64_t var_8 = 0;
+    *arg1 = (*arg1 + arg1);
+    arg1[0x20ffffd1];
+    *arg1;
+    *arg1 = (*arg1 + arg1);
+    *(arg3 + 0x11ffffd1);
+    /* undefined */;
+}
+
+int64_t sub_40d344(char arg1, void* arg2 @ rax, int16_t arg3 @ rbx, int32_t arg4 @ rdi)
+{
+    *(arg2 - 0x48) = (*(arg2 - 0x48) + 1);
+    *arg3[1] = (*arg3[1] >> arg1);
+    /* undefined */;
+}
+
+int64_t sub_40d356(char arg1, int64_t arg2, char arg3 @ rax, int16_t arg4 @ rbx, char* arg5 @ rsi)
+{
+    *arg5 = (*arg5 + arg3);
+    *arg2;
+    *arg4[1] = (*arg4[1] >> arg1);
+    /* undefined */;
+}
+
+int64_t sub_40d362(char arg1, int64_t arg2 @ rax, int16_t arg3 @ rbx)
+{
+    *arg3[1] = (*arg3[1] >> arg1);
+    /* jump -> *arg2 */
+}
+
+int64_t sub_40f1de(int16_t arg1 @ rax)
+{
+    bool c;
+    *arg1[1] = (*arg1[1] + 0x1d);
+    /* undefined */;
+}
+
+int64_t sub_40f1e4(int16_t arg1 @ rax)
+{
+    *arg1[1] = (*arg1[1] & 0x1d);
+    /* undefined */;
+}
+
+int64_t sub_40f1ea(int64_t, int16_t arg2)
+{
+    *arg2[1] = (*arg2[1] ^ 0x1d);
+    /* undefined */;
+}
+
+int64_t sub_40f1f0(char* arg1 @ rdi)
+{
+    *arg1 = (*arg1 + 0x1e);
+    /* undefined */;
+}
+
+int64_t sub_40f1f6(char* arg1 @ rdi)
+{
+    bool c;
+    *arg1 = (*arg1 + 0x1e);
+    /* undefined */;
+}
+
+int64_t sub_40f1fc(char* arg1)
+{
+    *arg1 = (*arg1 - 0x1e);
+    /* undefined */;
+}
+
+int64_t sub_40f202(int64_t, int64_t arg2)
+{
+    *arg2;
+    /* undefined */;
+}
+
+int64_t sub_40f22a()
+{
+    /* undefined */;
+}
+
+int64_t sub_40f244(int32_t* arg1 @ rax, int16_t arg2 @ rbx, int64_t arg3 @ rsi, char* arg4 @ rdi)
+{
+    int32_t temp0 = *arg1;
+    *arg1 = (*arg1 + arg1);
+    if ((temp0 + arg1) < temp0)
+    {
+        /* undefined */;
+    }
+    *arg1 = (*arg1 + arg1);
+    int64_t rdx;
+    int64_t var_8 = rdx;
+    bool p = /* bool p = unimplemented  {and eax, 0x106cf} */;
+    if (!(p))
+    {
+        *arg3;
+        *arg4 = (*arg4 + *arg2[1]);
+        /* undefined */;
+    }
+    /* undefined */;
+}
+
+int64_t sub_40f250(int32_t* arg1 @ rax)
+{
+    *arg1 = (*arg1 + arg1);
+    *arg1[1] = *arg1;
+    /* undefined */;
+}
+
+int64_t sub_40f25c(char* arg1, int32_t* arg2 @ rax)
+{
+    int32_t temp0 = *arg2;
+    *arg2 = (*arg2 + arg2);
+    *arg1 = (*arg1 - arg1);
+    /* undefined */;
+}
+
+int64_t sub_40f262(int32_t* arg1 @ rax, char* arg2 @ rbx, int64_t arg3 @ rsi, char* arg4 @ rdi)
+{
+    *arg1 = (*arg1 + arg1);
+    *arg2;
+    *arg2 = (*arg2 + *arg1[1]);
+    int64_t rdx;
+    int64_t var_8 = rdx;
+    bool p = /* bool p = unimplemented  {and eax, 0x106cf} */;
+    if (!(p))
+    {
+        *arg3;
+        *arg4 = (*arg4 + *arg2[1]);
+        /* undefined */;
+    }
+    /* undefined */;
+}
+
+int64_t sub_40f2ae(int64_t arg1 @ rsi, uint8_t* arg2 @ rdi)
+{
+    *arg2 = (*arg2 >> 1);
+    *arg1;
+    /* undefined */;
+}
+
+int64_t sub_40f2cc(int64_t, char arg2, char arg3 @ rax)
+{
+    /* undefined */;
+}
+
+int64_t sub_40f2d8(int64_t arg1, char arg2, int16_t arg3 @ rax, int16_t arg4 @ rbx, char* arg5 @ rsi)
+{
+    bool z;
+    if ((!(z) && arg1 != 1))
+    {
+        *arg4[1] = (*arg4[1] ^ (arg1 - 1));
+        arg3 = (arg3 | *arg5);
+        *arg4[1] = (*arg4[1] + (arg1 - 1));
+        arg4 = (arg4 ^ *(arg1 - 1)[1]);
+        arg3 = (arg3 + *arg5);
+        *arg3[1] = (*arg3[1] + arg2);
+        /* undefined */;
+    }
+    /* undefined */;
+}
+
+int64_t sub_40f2e4(int64_t arg1 @ rax, int64_t arg2 @ rbx)
+{
+    arg1 = *(arg2 + arg1);
+    /* undefined */;
+}
+
+int64_t sub_40f2ea(int32_t arg1, int32_t* arg2 @ rsi)
+{
+    *arg2 = arg1;
+    bool z;
+    bool s;
+    bool o;
+    if ((z || s != o))
+    {
+        *arg2 = (ROLB(*arg2, arg1));
+        /* undefined */;
+    }
+    /* undefined */;
+}
+
+int64_t sub_40f383(int16_t arg1, char* arg2, int32_t* arg3 @ rax, void* arg4 @ rbx, void* arg5 @ rbp, uint8_t* arg6 @ rsi)
+{
+    *(arg2 + arg6) = (*(arg2 + arg6) + *arg3[1]);
+    *arg1[1] = (*arg1[1] ^ arg4);
+    arg3 = (arg3 + *arg6);
+    *arg6 = (*arg6 + *arg4[1]);
+    *arg1[1] = (*arg1[1] ^ arg4);
+    arg3 = (arg3 + *arg6);
+    *(arg2 + arg6) = (*(arg2 + arg6) + *arg3[1]);
+    *arg1[1] = (*arg1[1] ^ arg4);
+    arg3 = (arg3 + *arg6);
+    *arg6 = (*arg6 + *arg4[1]);
+    *arg1[1] = (*arg1[1] ^ arg4);
+    arg3 = (arg3 + *arg6);
+    *((arg2 + arg6) - 0x39) = (*((arg2 + arg6) - 0x39) + arg1);
+    *arg6;
+    arg3 = (arg3 | *arg6);
+    *(arg4 + 0x32) = (*(arg4 + 0x32) + arg4);
+    arg3 = (arg3 + 1);
+    *(arg5 + 0x32) = (*(arg5 + 0x32) + *arg3[1]);
+    *arg6 = (ROLB(*arg6, arg1));
+    *arg3 = (*arg3 + arg3);
+    int32_t rflags;
+    __outsb(arg2, *arg6, arg6, rflags);
+    arg2 = 0;
+    /* undefined */;
+}
+
+int64_t sub_40f389(int16_t arg1, char* arg2, int32_t* arg3 @ rax, void* arg4 @ rbx, void* arg5 @ rbp, char* arg6 @ rsi)
+{
+    *arg6 = (*arg6 + *arg1[1]);
+    *arg1[1] = (*arg1[1] ^ arg4);
+    arg3 = (arg3 + *arg6);
+    *arg6 = (*arg6 + *arg4[1]);
+    *arg1[1] = (*arg1[1] ^ arg4);
+    arg3 = (arg3 + *arg6);
+    *(arg2 + arg6) = (*(arg2 + arg6) + *arg3[1]);
+    *arg1[1] = (*arg1[1] ^ arg4);
+    arg3 = (arg3 + *arg6);
+    *arg6 = (*arg6 + *arg4[1]);
+    *arg1[1] = (*arg1[1] ^ arg4);
+    arg3 = (arg3 + *arg6);
+    *((arg2 + arg6) - 0x39) = (*((arg2 + arg6) - 0x39) + arg1);
+    *arg6;
+    arg3 = (arg3 | *arg6);
+    *(arg4 + 0x32) = (*(arg4 + 0x32) + arg4);
+    arg3 = (arg3 + 1);
+    *(arg5 + 0x32) = (*(arg5 + 0x32) + *arg3[1]);
+    *arg6 = (ROLB(*arg6, arg1));
+    *arg3 = (*arg3 + arg3);
+    int32_t rflags;
+    __outsb(arg2, *arg6, arg6, rflags);
+    arg2 = 0;
+    /* undefined */;
+}
+
+void sub_40f3be(int32_t* arg1 @ rax) __noreturn
+{
+    *arg1 = (*arg1 + arg1);
+    trap(0x2a);
+}
+
+int64_t sub_40f3c4(char arg1, int16_t arg2, int32_t* arg3 @ rax, char* arg4 @ rsi)
+{
+    int32_t temp0 = *arg3;
+    *arg3 = (*arg3 + arg3);
+    if ((temp0 + arg3) < 0)
+    {
+        /* undefined */;
+    }
+    *arg4 = (ROLB(*arg4, arg1));
+    *arg3 = (*arg3 + arg3);
+    uint64_t rax = (arg3 & 0x106cf2b);
+    arg4[0x606cf32] = (arg4[0x606cf32] + arg1);
+    *(rax + 0x34) = (*(rax + 0x34) + *arg2[1]);
+    /* undefined */;
+}
+
+int64_t sub_40f3e2(int32_t* arg1 @ rax)
+{
+    int32_t temp0 = *arg1;
+    *arg1 = (*arg1 + arg1);
+    if (temp0 <= -(arg1))
+    {
+        /* undefined */;
+    }
+    /* undefined */;
+}
+
+int64_t sub_40f3e6()
+{
+    /* undefined */;
+}
+
+int64_t sub_40f3ee(int64_t, int16_t arg2, int32_t* arg3 @ rax, int32_t arg4 @ rsi)
+{
+    *arg3 = (*arg3 + arg3);
+    *0x46ff11;
+    bool c = (arg4 + *0x46ff11) < arg4;
+    char temp2 = *arg2[1];
+    char temp3 = *0x46facb;
+    *arg2[1] = (temp2 + temp3);
+    arg3 = (arg3 - 0x35);
+    uint64_t rax_1 = ((arg3 & 0x2a00010b) ^ 0x106cf);
+    if (rax_1 >= 0)
+    {
+        int32_t temp4 = *rax_1;
+        *rax_1 = (*rax_1 + rax_1);
+        rax_1 = (rax_1 + 3);
+        /* undefined */;
+    }
+    /* undefined */;
+}
+
+int64_t sub_40f40c(int32_t* arg1 @ rax)
+{
+    *arg1 = (*arg1 + arg1);
+    if ((arg1 ^ 0x107c8) <= 0)
+    {
+        /* undefined */;
+    }
+    /* undefined */;
+}
+
+int64_t sub_40f41e(int32_t* arg1 @ rax)
+{
+    *arg1 = (*arg1 + arg1);
+    *arg1[1] = *arg1;
+    /* undefined */;
+}
+
+int64_t sub_40f4d9(int64_t arg1, void* arg2 @ rax, int64_t arg3 @ rsi, int64_t arg4 @ rdi)
+{
+    bool c;
+    char temp0 = (*((arg3 + arg4) + 0x60740) + arg1);
+    *((arg3 + arg4) + 0x60740) = temp0;
+    if ((temp0 == 0 || arg1 != 1))
+    {
+        *(arg2 + 0x42) = (*(arg2 + 0x42) + (arg1 - 1));
+        /* tailcall */
+        return sub_40f528();
+    }
+    /* undefined */;
+}
+
+int64_t sub_40f514(int32_t* arg1 @ rax)
+{
+    bool c;
+    uint64_t rax = (arg1 + *arg1);
+    int32_t temp0 = *(rax - 0x31);
+    *(rax - 0x31) = (*(rax - 0x31) + 6);
+    *rax = (*rax + rax);
+    /* undefined */;
+}
+
+int64_t sub_40f520(int32_t* arg1 @ rax)
+{
+    bool c;
+    *arg1 = (*arg1 + arg1);
+    /* tailcall */
+    return sub_40f528();
+}
+
+int64_t sub_40f526(int32_t* arg1 @ rax)
+{
+    bool c;
+    *arg1 = (*arg1 + arg1);
+    /* tailcall */
+    return sub_40f528();
+}
+
+int64_t sub_40f528()
+{
+    int64_t rdx;
+    int64_t var_8 = rdx;
+    /* undefined */;
+}
+
+int64_t sub_40f52c(int32_t* arg1 @ rax)
+{
+    bool c;
+    *arg1 = (*arg1 + arg1);
+    /* undefined */;
+}
+
+int64_t sub_40f532(int32_t* arg1 @ rax)
+{
+    bool c;
+    *arg1 = (*arg1 + arg1);
+    /* undefined */;
+}
+
+int64_t sub_40f54a(int32_t arg1, int32_t* arg2 @ rax)
+{
+    bool c;
+    *arg2 = (*arg2 + arg2);
+    /* undefined */;
+}
+
+int64_t sub_40f556(int64_t arg1, void* arg2, int32_t* arg3 @ rax, int16_t arg4 @ rbx, int32_t* arg5 @ rsi, int32_t* arg6 @ rdi)
+{
+    bool c;
+    *arg3 = (*arg3 + arg3);
+    *arg6 = *arg5;
+    void* rdi = &arg6[1];
+    char* fsbase;
+    fsbase[arg1] = (fsbase[arg1] | arg2);
+    *(rdi + 0x11086442) = (*(rdi + 0x11086442) + *arg1[1]);
+    *(arg2 + 0x130ccb42) = (*(arg2 + 0x130ccb42) + *arg4[1]);
+    *arg1[1] = (*arg1[1] + arg3);
+    /* undefined */;
+}
+
+int64_t sub_40f583(int64_t arg1, char arg2, char* arg3 @ rax)
+{
+    int32_t rflags;
+    __sti(rflags);
+    char* fsbase;
+    fsbase[arg1] = (fsbase[arg1] | arg2);
+    *0x1143e0d6 = (*0x1143e0d6 + arg3);
+    *arg3 = (*arg3 + arg2);
+    /* undefined */;
+}
+
+int64_t sub_40f586(int64_t arg1, char arg2, int32_t* arg3 @ rax)
+{
+    bool c;
+    *arg3 = (*arg3 + arg3);
+    int32_t rflags;
+    __sti(rflags);
+    char* fsbase;
+    fsbase[arg1] = (fsbase[arg1] | arg2);
+    *0x1143e0d6 = (*0x1143e0d6 + arg3);
+    *arg3 = (*arg3 + arg2);
+    /* undefined */;
+}
+
+int64_t sub_40f59e(int16_t arg1, int32_t* arg2 @ rax, char* arg3 @ rdi)
+{
+    bool c;
+    *arg2 = (*arg2 + arg2);
+    *arg3 = (*arg3 + *arg1[1]);
+    /* undefined */;
+}
+
+int64_t sub_40f5a9(int64_t, char* arg2, char arg3 @ rax, int16_t arg4 @ rbx)
+{
+    *arg2 = (*arg2 + *arg4[1]);
+    /* undefined */;
+}
+
+int64_t sub_40f5b0(int32_t* arg1 @ rax)
+{
+    bool c;
+    *arg1 = (*arg1 + arg1);
+    /* undefined */;
+}
+
+int64_t sub_40f5b6(int32_t* arg1 @ rax)
+{
+    *arg1;
+    /* undefined */;
+}
+
+int64_t sub_40f5bc(int32_t* arg1 @ rax)
+{
+    bool c;
+    *arg1 = (*arg1 + arg1);
+    /* undefined */;
+}
+
+int64_t sub_40f5d0(int32_t arg1, void* arg2 @ rbp, int32_t* arg3 @ rsi)
+{
+    *arg3 = arg1;
+    bool c;
+    *(arg2 - 0x38) = (RLCD(*(arg2 - 0x38), 1, c));
+    /* undefined */;
+}
+
+void sub_40f607(int64_t, uint16_t arg2, int32_t arg3 @ rax, char* arg4 @ rbx, void* arg5 @ rsi) __noreturn
+{
+    int32_t rflags;
+    __out_dx_oeax(arg2, arg3, rflags);
+    bool c;
+    *arg4 = (*arg4 + arg2);
+    *(arg5 + 0x57) = (*(arg5 + 0x57) + arg5);
+    trap(0xd);
+}
+
+int64_t sub_410e1e(int64_t arg1, char* arg2 @ rax)
+{
+    int64_t var_8 = 1;
+    *arg1;
+    *arg2 = (*arg2 + arg2);
+    *arg2 = (*arg2 | arg2);
+    char temp0 = *arg2;
+    *arg2 = arg1;
+    arg1 = temp0;
+    __fbld(*arg2);
+    /* undefined */;
+}
+
+int64_t sub_410e75(double* arg1, uint16_t arg2, int32_t* arg3 @ rax, char arg4 @ rbx, int64_t arg5 @ rbp, void* arg6 @ rsi, char* arg7 @ rdi, long double arg8 @ st0)
+{
+    *arg3 = (*arg3 ^ arg3);
+    *arg3 = (*arg3 + arg1);
+    *(arg6 - 0x71ca42f8) = (*(arg6 - 0x71ca42f8) + arg3);
+    *(arg3 + 1) = (*(arg3 + 1) + arg6);
+    *arg1;
+    *arg3 = (*arg3 + arg3);
+    *arg3 = (*arg3 | arg3);
+    *arg3;
+    *arg3 = arg4;
+    char* var_8 = arg7;
+    *arg7 = (*arg7 + *arg2[1]);
+    *(arg3 + 1) = (*(arg3 + 1) + *arg2[1]);
+    int32_t rflags;
+    arg3 = __in_al_dx(arg2, rflags);
+    *arg3 = (*arg3 ^ arg3);
+    *arg3 = (*arg3 + arg1);
+    arg1[0x6e6b900] = (arg1[0x6e6b900] + arg3);
+    *(arg3 + 1) = (*(arg3 + 1) + *arg2[1]);
+    *arg3 = (*arg3 ^ arg3);
+    *arg3 = (*arg3 + arg1);
+    arg1[0x6e6ba20] = (arg1[0x6e6ba20] + arg3);
+    *(arg3 + 1) = (*(arg3 + 1) + *arg2[1]);
+    arg3 = (arg3 | 0x32);
+    *arg3 = (*arg3 + arg3);
+    *arg3;
+    *arg3 = (*arg3 | arg3);
+    char temp0_2 = *arg3;
+    *arg3 = arg3;
+    arg3 = temp0_2;
+    *0x1b10ef1;
+    arg3 = (arg3 - 0x32);
+    *arg3 = (*arg3 + arg3);
+    *arg3 = (*arg3 | arg3);
+    char temp0_3 = *arg3;
+    *arg3 = arg3;
+    arg3 = temp0_3;
+    *arg7 = (*arg7 + *arg3[1]);
+    *(arg5 + 1);
+    uint8_t* rdi;
+    uint8_t temp0_4;
+    temp0_4 = __insb(arg7, arg2, rflags);
+    *rdi = temp0_4;
+    arg3 = (arg3 ^ *arg3);
+    *arg3 = (*arg3 + arg1);
+    arg1[-0xb3935a0] = (arg1[-0xb3935a0] + arg3);
+    /* undefined */;
+}
+
+int64_t sub_410ec4(void* arg1, char* arg2, char arg3, int32_t* arg4 @ rax, void* arg5 @ rbx, void* arg6 @ rbp, void* arg7 @ rsi, int64_t arg8 @ rdi)
+{
+    bool c;
+    *arg4 = (*arg4 + arg1);
+    bool o = /* bool o = unimplemented  {adc dword [rax], ecx} */;
+    if (o)
+    {
+        arg4 = (arg4 ^ *arg4);
+        *arg4 = (*arg4 + arg1);
+        *(arg7 + 0x5735eb00) = (*(arg7 + 0x5735eb00) + arg4);
+        *(arg4 + 1);
+        *arg4;
+        *arg4 = (*arg4 + arg1);
+        *(arg1 + 0x5f360b00) = (*(arg1 + 0x5f360b00) + arg4);
+        *(arg1 + 1);
+        void* const* var_8 = &__return_addr;
+        arg4 = (arg4 ^ *arg4);
+        *arg4 = (*arg4 + arg1);
+        *(arg1 + 0x130b3f00) = (*(arg1 + 0x130b3f00) + arg4);
+        *arg2[1] = (*arg2[1] + *(arg5 + 1));
+        arg4 = (arg4 ^ *arg4);
+        *arg4 = (*arg4 + arg1);
+        *(arg1 + 0x67362700) = (*(arg1 + 0x67362700) + arg4);
+        *(arg6 + 1);
+        int32_t rflags;
+        uint8_t* rdi;
+        uint8_t temp0_1;
+        temp0_1 = __insb(arg8, arg2, rflags);
+        *rdi = temp0_1;
+        arg4 = (arg4 ^ *arg4);
+        *arg4 = (*arg4 + arg1);
+        *(arg1 - 0x59c9ad00) = (*(arg1 - 0x59c9ad00) + arg4);
+        /* undefined */;
+    }
+    *arg2 = (*arg2 ^ *arg2[1]);
+    *arg4 = (*arg4 + arg4);
+    *arg4 = (*arg4 | arg4);
+    char temp0 = *arg4;
+    *arg4 = arg4;
+    arg4 = temp0;
+    *(arg5 + 0x36) = (*(arg5 + 0x36) + arg2);
+    (*arg7 - *arg8);
+    /* undefined */;
+}
+
+int64_t sub_411722(int32_t* arg1, float* arg2, char* arg3, char* arg4 @ rax, char* arg5 @ rbx, int64_t arg6 @ rsi, void* arg7 @ rdi)
+{
+    *arg2;
+    (*arg6 - *arg7);
+    char* rdi = (arg7 + 1);
+    *(arg1 + rdi) = (*(arg1 + rdi) + rdi);
+    *arg4 = (*arg4 + arg4);
+    arg1[0x2024446] = (arg1[0x2024446] + arg2);
+    *(rdi + 0x398401) = (*(rdi + 0x398401) + &__return_addr);
+    *arg4 = (*arg4 + arg1);
+    arg1[0x2024446] = (arg1[0x2024446] + arg2);
+    *(rdi + 0x3ab401) = (*(rdi + 0x3ab401) + &__return_addr);
+    *arg4 = (*arg4 + arg1);
+    arg1[0xdd0fb40] = (arg1[0xdd0fb40] + arg4);
+    rdi[0x3ac401] = (rdi[0x3ac401] + *arg4[1]);
+    *arg4 = (*arg4 + arg1);
+    arg5[0x4143fb00] = (arg5[0x4143fb00] + arg2);
+    arg4 = (arg4 - 0x59);
+    *(arg4 + 0x41) = (*(arg4 + 0x41) + rdi);
+    *arg4 = (*arg4 + arg4);
+    *arg4 = (*arg4 | arg4);
+    uint64_t rcx = arg4;
+    uint64_t rax = arg1;
+    *-0xffffffffa84e0faf = (*-0xffffffffa84e0faf + rax);
+    *((rcx + (rax << 1)) + 0x80000) = (*((rcx + (rax << 1)) + 0x80000) + &__return_addr);
+    int32_t rcx_1 = rax;
+    *rdi = (*rdi + rcx_1);
+    int32_t rax_1;
+    rax_1 = (rcx | 0xb0);
+    uint64_t rax_2 = (rax_1 + arg2);
+    *arg3 = (*arg3 + rax_2);
+    *rax_2 = (*rax_2 | rax_2);
+    uint64_t rcx_2 = rax_2;
+    *rcx_2 = (*rcx_2 + arg5);
+    int32_t rax_3;
+    rax_3 = (rcx_1 | 0xb8);
+    uint64_t rax_4 = (rax_3 + rdi);
+    *arg3 = (*arg3 + rax_4);
+    *rax_4 = (*rax_4 | rax_4);
+    uint64_t rax_5 = rcx_2;
+    *arg5 = (*arg5 + *rax_5[1]);
+    rax_5 = (rax_5 | 0xc0);
+    *(arg2 + (rax_5 << 1)) = (*(arg2 + (rax_5 << 1)) + &__return_addr);
+    *rax_5 = (*rax_5 + rax_5);
+    *rax_5 = (*rax_5 | rax_5);
+    uint64_t rcx_4 = rax_5;
+    char* rax_6 = rax_4;
+    *-0xffffffffc84e1ce7 = (*-0xffffffffc84e1ce7 + *rcx_4[1]);
+    *(arg2 + (rax_6 << 1)) = (*(arg2 + (rax_6 << 1)) + rax_6);
+    *rax_6 = (*rax_6 + rcx_4);
+    arg5[0x26443700] = (arg5[0x26443700] + arg2);
+    rcx_4 = (rcx_4 + arg2);
+    *(rax_6 + 0x42) = (*(rax_6 + 0x42) + (arg6 + 1));
+    *rax_6 = (*rax_6 + rax_6);
+    *rax_6 = (*rax_6 | rax_6);
+    uint64_t rax_7 = arg5;
+    *(rcx_4 + 0x44) = (*(rcx_4 + 0x44) + rax_7);
+    char* rcx_5 = (rcx_4 | *0x4321198c);
+    *rax_7 = (*rax_7 + rax_7);
+    *rax_7 = (*rax_7 | rax_7);
+    *rcx_5 = (*rcx_5 | arg3);
+    /* undefined */;
+}
+
+int64_t sub_4117e8()
+{
+    /* undefined */;
+}
+
+int64_t sub_41182f(int32_t arg1, char arg2, int64_t, char arg4, int32_t* arg5 @ rax, int32_t arg6 @ rbx, int64_t arg7 @ rsi, void* arg8 @ rdi, long double arg9 @ st0)
+{
+    *arg5 = (*arg5 + arg5);
+    *arg5 = (*arg5 + arg5);
+    arg5[0x5082440] = (arg5[0x5082440] + arg5);
+    *0x75dd1a17;
+    *0x75dd1a17 = arg4;
+    *arg5 = (*arg5 + arg5);
+    *arg5 = (*arg5 | arg5);
+    uint64_t rbx = arg5;
+    *rbx = (*rbx + *arg1[1]);
+    uint64_t rax_1 = (arg6 | 0x76d401db);
+    *rax_1 = (*rax_1 + rax_1);
+    *rax_1 = (*rax_1 | rax_1);
+    int32_t rcx = rax_1;
+    *(arg8 + 0x46) = (*(arg8 + 0x46) + *rcx[1]);
+    uint64_t rcx_1 = arg1;
+    uint64_t rax_3 = rcx;
+    *(rcx_1 + 0x46) = (*(rcx_1 + 0x46) + *rbx[1]);
+    char temp1 = (*rcx_1 | rax_3);
+    *rcx_1 = temp1;
+    void* rcx_2 = (rcx_1 - 1);
+    uint64_t rax_4;
+    if (!((temp1 == 0 || rcx_2 != 0)))
+    {
+        rax_3 = (rax_3 & 0x77);
+        *rax_3 = (*rax_3 + rax_3);
+        *rax_3 = (*rax_3 | rax_3);
+        char temp0_4 = rcx_2;
+        rcx_2 = rax_3;
+        rax_4 = temp0_4;
+        *(rbx - 0x1ef23aba) = (*(rbx - 0x1ef23aba) + rax_4);
+        *((arg8 + (arg7 << 1)) + 0x80000) = (*((arg8 + (arg7 << 1)) + 0x80000) + &__return_addr);
+    }
+    else
+    {
+        *rax_3 = (*rax_3 + rcx_2);
+        *(rcx_2 - 0x3ab97d00) = (*(rcx_2 - 0x3ab97d00) + arg2);
+        rax_4 = (rax_3 | 0x77a401e1);
+        *rax_4 = (*rax_4 + rax_4);
+        *rax_4 = (*rax_4 | rax_4);
+    }
+    uint64_t rbx_1 = rax_4;
+    char* rax_5 = rbx;
+    *(arg8 - 0x1cfef7ba) = (*(arg8 - 0x1cfef7ba) + arg2);
+    *rax_5;
+    *rax_5 = (*rax_5 + rcx_2);
+    *(rbx_1 + 0x54471200) = (*(rbx_1 + 0x54471200) + arg2);
+    *rax_5[1] = (*rax_5[1] + rbx_1);
+    *rax_5 = (*rax_5 + rax_5);
+    *rax_5 = (*rax_5 + rax_5);
+    rax_5[0x79209600] = (rax_5[0x79209600] + rax_5);
+    int32_t rflags;
+    __out_immb_oeax(0xe, rax_5, rflags);
+    rax_5 = __in_al_immb(1, rflags);
+    *rax_5 = (*rax_5 + rax_5);
+    *rax_5 = (*rax_5 + rax_5);
+    *rax_5 = (*rax_5 - 0x6a);
+    rax_5[-0x1af113b9] = (rax_5[-0x1af113b9] & rbx_1);
+    *rax_5 = (*rax_5 + rax_5);
+    *rax_5 = (*rax_5 + rax_5);
+    rax_5[-0x4edf6f00] = (rax_5[-0x4edf6f00] + rax_5);
+    /* undefined */;
+}
+
+int64_t sub_411858(int64_t arg1, char arg2, char* arg3 @ rax, void* arg4 @ rbx, int64_t arg5 @ rsi, void* arg6 @ rdi, long double arg7 @ st0)
+{
+    void* rcx = (arg1 - 1);
+    bool z;
+    if (!((z || rcx != 0)))
+    {
+        arg3 = 0x84118d5(rcx);
+    }
+    else
+    {
+        *arg3 = (*arg3 + rcx);
+    }
+    *(rcx + 0x8467900) = (*(rcx + 0x8467900) + arg2);
+    int32_t rcx_1 = (rcx + &__return_addr);
+    *(arg6 + (arg5 << 1)) = (*(arg6 + (arg5 << 1)) + &__return_addr);
+    *arg3 = (*arg3 + arg3);
+    *arg3 = (*arg3 | arg3);
+    *(arg4 - 0x1ef23aba) = (*(arg4 - 0x1ef23aba) + rcx_1);
+    *((arg6 + (arg5 << 1)) + 0x80000) = (*((arg6 + (arg5 << 1)) + 0x80000) + &__return_addr);
+    uint64_t rbx = rcx_1;
+    uint64_t rax_1 = arg4;
+    *(arg6 - 0x1cfef7ba) = (*(arg6 - 0x1cfef7ba) + arg2);
+    *rax_1;
+    *rax_1 = (*rax_1 + arg3);
+    *(rbx + 0x54471200) = (*(rbx + 0x54471200) + arg2);
+    *rax_1[1] = (*rax_1[1] + rbx);
+    *rax_1 = (*rax_1 + rax_1);
+    *rax_1 = (*rax_1 + rax_1);
+    *(rax_1 + 0x79209600) = (*(rax_1 + 0x79209600) + rax_1);
+    int32_t rflags;
+    __out_immb_oeax(0xe, rax_1, rflags);
+    rax_1 = __in_al_immb(1, rflags);
+    *rax_1 = (*rax_1 + rax_1);
+    *rax_1 = (*rax_1 + rax_1);
+    *rax_1 = (*rax_1 - 0x6a);
+    *(rax_1 - 0x1af113b9) = (*(rax_1 - 0x1af113b9) & rbx);
+    *rax_1 = (*rax_1 + rax_1);
+    *rax_1 = (*rax_1 + rax_1);
+    *(rax_1 - 0x4edf6f00) = (*(rax_1 - 0x4edf6f00) + rax_1);
+    /* undefined */;
+}
+
+void sub_411b92(int64_t* arg1, void* arg2 @ rax, int16_t arg3 @ rbx, char* arg4 @ rdi, int64_t arg5 @ st0) __noreturn
+{
+    int32_t rflags;
+    __sti(rflags);
+    *(arg2 + 0x80000) = (*(arg2 + 0x80000) + arg4);
+    *arg4 = (*arg4 + *arg3[1]);
+    *arg4;
+    __psubq_mmxq_memq(arg5, *arg1);
+    breakpoint();
+}
+
+int64_t sub_413551(int32_t arg1, int32_t* arg2 @ rax, void* arg3 @ rbx)
+{
+    *arg2 = (RLCD(*arg2, 0xd9, arg2 < 0x1703d90f));
+    *(arg3 + 0x56);
+    /* undefined */;
+}
+
+int64_t sub_4137b4(int64_t arg1, void* arg2 @ rax, int32_t arg3 @ rbx, void* arg4 @ rdi, long double arg5 @ st0)
+{
+    *((arg4 + arg2) + 0x60) = (*((arg4 + arg2) + 0x60) + arg2);
+    *(arg4 + 7) = (*(arg4 + 7) + arg2);
+    int64_t var_8 = 0x44074400;
+    uint64_t rsp = (&var_8 + arg3);
+    *arg1[1] = (*arg1[1] | *(arg2 + 1));
+    *0x56112a17 = (truncf(arg5, arg2));
+    *((rsp + arg1) - 0x42) = (*((rsp + arg1) - 0x42) + 0x56112a17);
+    *(arg4 + 0xc) = (*(arg4 + 0xc) + 0x56112a17);
+    return 0xbc0c4b01;
+}
+
+void sub_4137db(char* arg1, int32_t arg2, void* arg3 @ rax, void* arg4 @ rdi) __noreturn
+{
+    arg3 = (arg3 | 0xc4);
+    *(arg4 + 0xc) = (*(arg4 + 0xc) + arg2);
+    *arg1 = 0x5d;
+    arg3 = (arg3 | 0xc8);
+    *(arg3 + 0xc) = (*(arg3 + 0xc) + &__return_addr);
+    breakpoint();
+}
+
+int64_t sub_4272c8()
+{
+    /* undefined */;
+}
+

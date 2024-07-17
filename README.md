@@ -49,6 +49,12 @@ EEVBlog did an intro and tear-down of the DP100 power supply:
 
 [![EEVBlog - EEVblog 1606 - $45 AlienTek DP100 100W USB-C PSU REVIEW](https://img.youtube.com/vi/Pd6LG7iP2GQ/0.jpg)](https://www.youtube.com/watch?v=Pd6LG7iP2GQ)
 
+## Research
+
+The [research](research) directory contains exploratory work I've done to understand the device's USB protocol and firmware in an effort to write an open source library for it.
+
+You do not need these files to run the application they are for reference purposes only.
+
 ## Future Enhancements
 
 A list of possible future enhancements I might add:
