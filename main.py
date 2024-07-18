@@ -7,6 +7,7 @@ from PyQt6.QtWidgets import (
     QWidget,
     QPushButton,
     QLabel,
+    QLineEdit,
     QGroupBox,
     QGridLayout,
     QComboBox,
@@ -17,22 +18,16 @@ from PyQt6.QtWidgets import (
     QMessageBox,
 )
 from PyQt6.QtCore import QTimer, Qt
-from PyQt6.QtGui import QIcon
+from PyQt6.QtGui import QFont, QIcon
 from dp100 import DP100
 import logging
+import time
 
 logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
 
 
 class MainWindow(QMainWindow):
-    def watchdog_timeout(self):
-        logger.error("Watchdog timer expired, operation took too long")
-        self.dp100.abort_operation()
-        QMessageBox.critical(
-            self, "Error", "Operation timed out. The device may be unresponsive."
-        )
-
     def __init__(self):
         super().__init__()
         self.dp100 = DP100()
@@ -109,54 +104,6 @@ class MainWindow(QMainWindow):
         control_group.setLayout(control_layout)
         output_layout.addWidget(control_group)
 
-        # Preset tab
-        preset_tab = QWidget()
-        preset_layout = QVBoxLayout(preset_tab)
-        tabs.addTab(preset_tab, "Presets")
-
-        # Preset selection
-        preset_select_layout = QHBoxLayout()
-        self.preset_combo = QComboBox()
-        self.preset_combo.addItems([f"Preset {i}" for i in range(10)])
-        self.load_preset_button = QPushButton("Load Preset")
-        self.load_preset_button.clicked.connect(self.load_preset)
-        preset_select_layout.addWidget(self.preset_combo)
-        preset_select_layout.addWidget(self.load_preset_button)
-        preset_layout.addLayout(preset_select_layout)
-
-        # Preset settings
-        preset_settings_group = QGroupBox("Preset Settings")
-        preset_settings_layout = QGridLayout()
-        self.preset_voltage = QDoubleSpinBox()
-        self.preset_voltage.setRange(0, 30)
-        self.preset_voltage.setDecimals(3)
-        self.preset_voltage.setSuffix(" V")
-        self.preset_current = QDoubleSpinBox()
-        self.preset_current.setRange(0, 5)
-        self.preset_current.setDecimals(3)
-        self.preset_current.setSuffix(" A")
-        self.preset_ovp = QDoubleSpinBox()
-        self.preset_ovp.setRange(0, 30)
-        self.preset_ovp.setDecimals(3)
-        self.preset_ovp.setSuffix(" V")
-        self.preset_ocp = QDoubleSpinBox()
-        self.preset_ocp.setRange(0, 5)
-        self.preset_ocp.setDecimals(3)
-        self.preset_ocp.setSuffix(" A")
-        self.save_preset_button = QPushButton("Save Preset")
-        self.save_preset_button.clicked.connect(self.save_preset)
-        preset_settings_layout.addWidget(QLabel("Voltage:"), 0, 0)
-        preset_settings_layout.addWidget(self.preset_voltage, 0, 1)
-        preset_settings_layout.addWidget(QLabel("Current:"), 1, 0)
-        preset_settings_layout.addWidget(self.preset_current, 1, 1)
-        preset_settings_layout.addWidget(QLabel("OVP:"), 2, 0)
-        preset_settings_layout.addWidget(self.preset_ovp, 2, 1)
-        preset_settings_layout.addWidget(QLabel("OCP:"), 3, 0)
-        preset_settings_layout.addWidget(self.preset_ocp, 3, 1)
-        preset_settings_layout.addWidget(self.save_preset_button, 4, 0, 1, 2)
-        preset_settings_group.setLayout(preset_settings_layout)
-        preset_layout.addWidget(preset_settings_group)
-
         # Settings tab
         settings_tab = QWidget()
         settings_layout = QVBoxLayout(settings_tab)
@@ -203,7 +150,13 @@ class MainWindow(QMainWindow):
         main_layout.addWidget(self.status_label)
 
     def connect_on_start(self):
-        self.toggle_connection()
+        if self.dp100.connect():
+            self.connection_status.setText("Connected")
+            self.connection_status.setStyleSheet("color: green;")
+            self.update_device_info()
+        else:
+            self.connection_status.setText("Connection Failed")
+            self.connection_status.setStyleSheet("color: red;")
 
     def toggle_connection(self):
         if self.dp100.device:
@@ -212,54 +165,48 @@ class MainWindow(QMainWindow):
             self.connection_status.setText("Not Connected")
             self.connection_status.setStyleSheet("color: red;")
         else:
-            try:
-                self.dp100.connect()
+            if self.dp100.connect():
                 self.connect_button.setText("Disconnect")
                 self.connection_status.setText("Connected")
                 self.connection_status.setStyleSheet("color: green;")
                 self.update_device_info()
                 self.update_settings()
-            except Exception as e:
-                logger.error(f"Connection error: {e}")
+            else:
                 self.connection_status.setText("Connection Failed")
                 self.connection_status.setStyleSheet("color: red;")
-                QMessageBox.critical(self, "Connection Error", str(e))
+                QMessageBox.critical(
+                    self, "Connection Error", "Failed to connect to the device."
+                )
 
     def update_info(self):
         if self.dp100.device:
-            try:
-                info = self.dp100.get_basic_info()
-                if info:
-                    self.vin_label.setText(f"Input Voltage: {info['vin']:.2f} V")
-                    self.voltage_label.setText(f"Output Voltage: {info['vout']:.3f} V")
-                    self.current_label.setText(f"Output Current: {info['iout']:.3f} A")
-                    self.power_label.setText(f"Power: {info['power']:.2f} W")
-                    self.temp_label.setText(
-                        f"Temperature: {info['temp1']:.1f}°C / {info['temp2']:.1f}°C"
-                    )
-                    self.dc_5v_label.setText(f"5V DC: {info['dc_5v']:.3f} V")
+            info = self.dp100.get_basic_info()
+            if info:
+                self.vin_label.setText(f"Input Voltage: {info['vin']:.2f} V")
+                self.voltage_label.setText(f"Output Voltage: {info['vout']:.3f} V")
+                self.current_label.setText(f"Output Current: {info['iout']:.3f} A")
+                self.power_label.setText(f"Power: {info['vout'] * info['iout']:.2f} W")
+                self.temp_label.setText(
+                    f"Temperature: {info['temp1']:.1f}°C / {info['temp2']:.1f}°C"
+                )
+                self.dc_5v_label.setText(f"5V DC: {info['dc_5v']:.3f} V")
 
-                    # Interpret status bits
-                    status = info["status"]
-                    status_str = f"Status: {status:016b}\n"
-                    status_str += f"Output: {'ON' if status & 0x0001 else 'OFF'}\n"
-                    status_str += f"Mode: {'CC' if status & 0x0002 else 'CV'}\n"
-                    status_str += (
-                        f"OVP: {'Triggered' if status & 0x0004 else 'Normal'}\n"
-                    )
-                    status_str += (
-                        f"OCP: {'Triggered' if status & 0x0008 else 'Normal'}\n"
-                    )
-                    status_str += (
-                        f"OPP: {'Triggered' if status & 0x0010 else 'Normal'}\n"
-                    )
-                    status_str += f"OTP: {'Triggered' if status & 0x0020 else 'Normal'}"
-
-                    self.status_label.setText(status_str)
-                else:
-                    logger.warning("Failed to get basic info")
-            except Exception as e:
-                logger.error(f"Error updating info: {e}")
+                status_str = f"Status: {info['work_st']:08b}\n"
+                status_str += f"Output: {'ON' if info['work_st'] & 0x01 else 'OFF'}\n"
+                status_str += f"Mode: {'CC' if info['work_st'] & 0x02 else 'CV'}\n"
+                status_str += (
+                    f"OVP: {'Triggered' if info['work_st'] & 0x04 else 'Normal'}\n"
+                )
+                status_str += (
+                    f"OCP: {'Triggered' if info['work_st'] & 0x08 else 'Normal'}\n"
+                )
+                status_str += (
+                    f"OPP: {'Triggered' if info['work_st'] & 0x10 else 'Normal'}\n"
+                )
+                status_str += (
+                    f"OTP: {'Triggered' if info['work_st'] & 0x20 else 'Normal'}"
+                )
+                self.status_label.setText(status_str)
 
     def set_output(self):
         if self.dp100.device:
@@ -270,136 +217,103 @@ class MainWindow(QMainWindow):
                 self.watchdog_timer = QTimer(self)
                 self.watchdog_timer.setSingleShot(True)
                 self.watchdog_timer.timeout.connect(self.watchdog_timeout)
-                self.watchdog_timer.start(15000)  # 15 second timeout
+                self.watchdog_timer.start(5000)  # 5 second timeout
 
                 success = self.dp100.set_output(voltage, current)
 
                 self.watchdog_timer.stop()
 
                 if success:
-                    logger.info(f"Output set successfully: {voltage}V, {current}A")
-                    QMessageBox.information(
-                        self, "Success", f"Output set to {voltage}V, {current}A"
-                    )
+                    # Double-check the actual output
+                    time.sleep(0.5)  # Give the device some time to update
+                    info = self.dp100.get_basic_info()
+                    if info:
+                        actual_voltage = info["vout"]
+                        actual_current = info["iout"]
+                        if (
+                            abs(actual_voltage - voltage) < 0.1
+                            and abs(actual_current - current) < 0.1
+                        ):
+                            logger.info(
+                                f"Output set and verified: {actual_voltage}V, {actual_current}A"
+                            )
+                            QMessageBox.information(
+                                self,
+                                "Success",
+                                f"Output set and verified: {actual_voltage}V, {actual_current}A",
+                            )
+                        else:
+                            logger.warning(
+                                f"Output set but values don't match: requested {voltage}V, {current}A, got {actual_voltage}V, {actual_current}A"
+                            )
+                            QMessageBox.warning(
+                                self,
+                                "Partial Success",
+                                f"Output set but values don't match:\nRequested: {voltage}V, {current}A\nActual: {actual_voltage}V, {actual_current}A",
+                            )
+                    else:
+                        logger.warning("Failed to verify output after setting")
+                        QMessageBox.warning(
+                            self,
+                            "Partial Success",
+                            "Output set but failed to verify. Please check the actual output on the device.",
+                        )
                 else:
                     logger.warning("Failed to set output")
                     QMessageBox.warning(
-                        self, "Error", "Failed to set output. Please try again."
+                        self,
+                        "Error",
+                        "Failed to set output. Please check the logs for more details.",
                     )
             except Exception as e:
                 self.watchdog_timer.stop()
-                logger.error(f"Error setting output: {e}")
+                logger.error(f"Error setting output: {e}", exc_info=True)
                 QMessageBox.critical(
-                    self, "Error", f"An error occurred while setting output: {str(e)}"
+                    self,
+                    "Error",
+                    f"An error occurred while setting output: {str(e)}\n\nPlease check the logs for more details.",
                 )
 
     def watchdog_timeout(self):
         logger.error("Watchdog timer expired, operation took too long")
+        self.dp100.abort_operation()
         QMessageBox.critical(
             self, "Error", "Operation timed out. The device may be unresponsive."
         )
-        # You might want to implement a way to cancel the ongoing operation here
-        # For example, you could set a flag in the DP100 class to abort the current operation
 
     def update_device_info(self):
-        if self.dp100.device:
-            try:
-                info = self.dp100.get_device_info()
-                if info:
-                    info_str = f"Device: {info['device_name']}\n"
-                    info_str += f"Hardware: {info['hardware_version']}\n"
-                    info_str += f"Software: {info['software_version']}\n"
-                    info_str += f"Serial: {info['serial_number']}"
-                    self.device_info_label.setText(info_str)
-                else:
-                    logger.warning("Failed to get device info")
-            except Exception as e:
-                logger.error(f"Error updating device info: {e}")
-
-    def update_output_state(self):
-        if self.dp100.device:
-            try:
-                state = self.dp100.get_output_state()
-                if state:
-                    status = "ON" if state["output_on"] else "OFF"
-                    self.status_label.setText(
-                        f"Output: {status}, Voltage: {state['voltage']:.3f}V, Current: {state['current']:.3f}A"
-                    )
-                else:
-                    self.status_label.setText("Failed to get output state")
-            except Exception as e:
-                logger.error(f"Error updating output state: {e}")
-                self.status_label.setText(f"Error updating output state: {str(e)}")
-
-    def load_preset(self):
-        if self.dp100.device:
-            try:
-                preset_index = self.preset_combo.currentIndex()
-                preset = self.dp100.get_preset(preset_index)
-                if preset:
-                    self.preset_voltage.setValue(preset["v_set"])
-                    self.preset_current.setValue(preset["i_set"])
-                    self.preset_ovp.setValue(preset["ovp"])
-                    self.preset_ocp.setValue(preset["ocp"])
-                    logger.info(f"Loaded preset {preset_index}")
-                else:
-                    logger.warning(f"Failed to load preset {preset_index}")
-            except Exception as e:
-                logger.error(f"Error loading preset: {e}")
-
-    def save_preset(self):
-        if self.dp100.device:
-            try:
-                preset_index = self.preset_combo.currentIndex()
-                v_set = self.preset_voltage.value()
-                i_set = self.preset_current.value()
-                ovp = self.preset_ovp.value()
-                ocp = self.preset_ocp.value()
-                success = self.dp100.set_preset(preset_index, v_set, i_set, ovp, ocp)
-                if success:
-                    logger.info(f"Saved preset {preset_index}")
-                else:
-                    logger.warning(f"Failed to save preset {preset_index}")
-            except Exception as e:
-                logger.error(f"Error saving preset: {e}")
+        info = self.dp100.get_device_info()
+        if info:
+            info_str = f"Device: {info['dev_type']}\n"
+            info_str += f"Hardware: {info['hdw_ver']}\n"
+            info_str += f"Software: {info['app_ver']}\n"
+            info_str += f"Bootloader: {info['boot_ver']}\n"
+            info_str += f"Date: {info['year']}-{info['month']:02d}-{info['day']:02d}"
+            self.device_info_label.setText(info_str)
 
     def update_settings(self):
         if self.dp100.device:
-            try:
-                settings = self.dp100.get_settings()
-                if settings:
-                    self.backlight_spinbox.setValue(settings["backlight"])
-                    self.volume_spinbox.setValue(settings["key_sound"])
-                    self.opp_spinbox.setValue(settings["over_power_protection"])
-                    self.otp_spinbox.setValue(settings["over_temperature_protection"])
-                    self.reverse_protect_checkbox.setChecked(
-                        settings["reverse_protection"]
-                    )
-                    self.auto_output_checkbox.setChecked(
-                        settings["power_on_state"] == 1
-                    )
-                else:
-                    logger.warning("Failed to get settings")
-            except Exception as e:
-                logger.error(f"Error updating settings: {e}")
+            settings = self.dp100.get_settings()
+            if settings:
+                self.backlight_spinbox.setValue(settings["backlight"])
+                self.volume_spinbox.setValue(settings["key_sound"])
+                self.opp_spinbox.setValue(settings["over_power_protection"])
+                self.otp_spinbox.setValue(settings["over_temperature_protection"])
+                self.reverse_protect_checkbox.setChecked(settings["reverse_protection"])
+                self.auto_output_checkbox.setChecked(settings["power_on_state"] == 1)
 
     def save_settings(self):
         if self.dp100.device:
             try:
-                backlight = self.backlight_spinbox.value()
-                volume = self.volume_spinbox.value()
-                opp = self.opp_spinbox.value()
-                otp = self.otp_spinbox.value()
-                reverse_protect = self.reverse_protect_checkbox.isChecked()
-                auto_output = self.auto_output_checkbox.isChecked()
-                success = self.dp100.set_settings(
-                    backlight=backlight,
-                    volume=volume,
-                    opp=opp,
-                    otp=otp,
-                    reverse_protect=reverse_protect,
-                    auto_output=auto_output,
-                )
+                settings = {
+                    "backlight": self.backlight_spinbox.value(),
+                    "key_sound": self.volume_spinbox.value(),
+                    "over_power_protection": self.opp_spinbox.value(),
+                    "over_temperature_protection": self.otp_spinbox.value(),
+                    "reverse_protection": self.reverse_protect_checkbox.isChecked(),
+                    "power_on_state": 1 if self.auto_output_checkbox.isChecked() else 0,
+                }
+                success = self.dp100.set_settings(settings)
                 if success:
                     logger.info("Settings saved successfully")
                     QMessageBox.information(
@@ -419,23 +333,6 @@ class MainWindow(QMainWindow):
             QMessageBox.warning(
                 self, "Not Connected", "Please connect to the device first."
             )
-
-    def update_device_info(self):
-        if self.dp100.device:
-            try:
-                info = self.dp100.get_device_info()
-                if info:
-                    info_str = f"Device Name: {info['device_name']}\n"
-                    info_str += f"Hardware Version: {info['hardware_version']}\n"
-                    info_str += f"Application Version: {info['application_version']}\n"
-                    info_str += f"Serial Number: {info['device_SN']}\n"
-                    info_str += f"Status: {info['device_status']}"
-                    self.device_info_label.setText(info_str)
-                    logger.info("Device info updated")
-                else:
-                    logger.warning("Failed to get device info")
-            except Exception as e:
-                logger.error(f"Error updating device info: {e}")
 
 
 if __name__ == "__main__":
