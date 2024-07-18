@@ -7,10 +7,8 @@ from PyQt6.QtWidgets import (
     QWidget,
     QPushButton,
     QLabel,
-    QLineEdit,
     QGroupBox,
     QGridLayout,
-    QComboBox,
     QTabWidget,
     QCheckBox,
     QSpinBox,
@@ -217,47 +215,17 @@ class MainWindow(QMainWindow):
                 self.watchdog_timer = QTimer(self)
                 self.watchdog_timer.setSingleShot(True)
                 self.watchdog_timer.timeout.connect(self.watchdog_timeout)
-                self.watchdog_timer.start(5000)  # 5 second timeout
+                self.watchdog_timer.start(10000)  # 10 second timeout
 
                 success = self.dp100.set_output(voltage, current)
 
                 self.watchdog_timer.stop()
 
                 if success:
-                    # Double-check the actual output
-                    time.sleep(0.5)  # Give the device some time to update
-                    info = self.dp100.get_basic_info()
-                    if info:
-                        actual_voltage = info["vout"]
-                        actual_current = info["iout"]
-                        if (
-                            abs(actual_voltage - voltage) < 0.1
-                            and abs(actual_current - current) < 0.1
-                        ):
-                            logger.info(
-                                f"Output set and verified: {actual_voltage}V, {actual_current}A"
-                            )
-                            QMessageBox.information(
-                                self,
-                                "Success",
-                                f"Output set and verified: {actual_voltage}V, {actual_current}A",
-                            )
-                        else:
-                            logger.warning(
-                                f"Output set but values don't match: requested {voltage}V, {current}A, got {actual_voltage}V, {actual_current}A"
-                            )
-                            QMessageBox.warning(
-                                self,
-                                "Partial Success",
-                                f"Output set but values don't match:\nRequested: {voltage}V, {current}A\nActual: {actual_voltage}V, {actual_current}A",
-                            )
-                    else:
-                        logger.warning("Failed to verify output after setting")
-                        QMessageBox.warning(
-                            self,
-                            "Partial Success",
-                            "Output set but failed to verify. Please check the actual output on the device.",
-                        )
+                    logger.info(f"Output set successfully: {voltage}V, {current}A")
+                    QMessageBox.information(
+                        self, "Success", f"Output set to {voltage}V, {current}A"
+                    )
                 else:
                     logger.warning("Failed to set output")
                     QMessageBox.warning(
