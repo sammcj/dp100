@@ -170,57 +170,45 @@ class DP100:
                 if self._abort_flag.is_set():
                     logger.warning("Operation aborted")
                     return False
-
-                # Set voltage and current
                 data = self.gen_set(True, int(voltage * 1000), int(current * 1000))
-                if not self.send_frame(self.OP_BASICSET, data):
-                    logger.error("Failed to send set output frame")
-                    continue
-
-                response = self.receive_frame()
-                if not response or response["op"] != self.OP_BASICSET:
-                    logger.error(
-                        f"Unexpected response type: {response['op'] if response else 'None'}"
-                    )
-                    continue
-
-                set_info = self.parse_basic_set(response["data"])
-                if not set_info or ("status" in set_info and set_info["status"] != 1):
-                    logger.error(
-                        f"Set output failed with status: {set_info['status'] if set_info else 'Unknown'}"
-                    )
-                    continue
-
-                # Enable the output
-                if not self.enable_output(True):
-                    logger.error("Failed to enable output")
-                    continue
-
-                # Wait for the settings to take effect
+                if self.send_frame(self.OP_BASICSET, data):
+                    response = self.receive_frame()
+                    if response and response["op"] == self.OP_BASICSET:
+                        set_info = self.parse_basic_set(response["data"])
+                        if set_info:
+                            if "status" in set_info:
+                                if set_info["status"] == 1:  # Assuming 1 means success
+                                    logger.info(
+                                        f"Output set successfully: {voltage}V, {current}A"
+                                    )
+                                    return True
+                                else:
+                                    logger.error(
+                                        f"Set output failed with status: {set_info['status']}"
+                                    )
+                            elif (
+                                abs(set_info["vo_set"] - voltage) < 0.1
+                                and abs(set_info["io_set"] - current) < 0.1
+                            ):
+                                logger.info(
+                                    f"Output set successfully: {voltage}V, {current}A"
+                                )
+                                return True
+                            else:
+                                logger.error(
+                                    f"Set output values don't match: requested {voltage}V, {current}A, got {set_info['vo_set']}V, {set_info['io_set']}A"
+                                )
+                        else:
+                            logger.error("Failed to parse set output response")
+                    else:
+                        logger.error(
+                            f"Unexpected response type: {response['op'] if response else 'None'}"
+                        )
+                logger.warning(
+                    f"Failed to set output (attempt {attempt + 1}/{max_retries})"
+                )
                 time.sleep(0.5)
-
-                # Verify the output
-                info = self.get_basic_info()
-                if (
-                    info
-                    and abs(info["vout"] - voltage) < 0.1
-                    and abs(info["iout"] - current) < 0.1
-                ):
-                    logger.info(
-                        f"Output set and verified: {info['vout']}V, {info['iout']}A"
-                    )
-                    return True
-                else:
-                    logger.warning(
-                        f"Output verification failed. Got: {info['vout']}V, {info['iout']}A"
-                    )
-
-                time.sleep(0.5)
-
-            logger.error(
-                f"Failed to set and verify output after {max_retries} attempts"
-            )
-            return False
+        return False
 
     def get_settings(self):
         with self._api_lock:
