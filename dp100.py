@@ -1,89 +1,324 @@
 import hid
 import struct
 import logging
+import time
+import crcmod
+from threading import Lock, Event
 
-logging.basicConfig(
-    level=logging.DEBUG
-)  # Set to INFO for reduced logging, or DEBUG to have raw data printed to the console
+logging.basicConfig(level=logging.DEBUG)
 logger = logging.getLogger(__name__)
-
-DP100_USB_INFO = {"vendor_id": 0x2E3C, "product_id": 0xAF01}
-
-
-def crc16(data: bytes, poly: int = 0xA001) -> int:
-    crc = 0xFFFF
-    for byte in data:
-        crc ^= byte
-        for _ in range(8):
-            crc = (crc >> 1) ^ poly if (crc & 0x0001) else crc >> 1
-    return crc
 
 
 class DP100:
+    VID = 0x2E3C
+    PID = 0xAF01
+
+    DR_H2D = 0xFB
+    DR_D2H = 0xFA
+
+    OP_DEVICEINFO = 0x10
+    OP_BASICINFO = 0x30
+    OP_BASICSET = 0x35
+    OP_SYSTEMINFO = 0x40
+
+    SET_MODIFY = 0x20
+    SET_ACT = 0x80
+
     def __init__(self):
         self.device = None
+        self._api_lock = Lock()
+        self._abort_flag = Event()
+        self.crc16 = crcmod.mkCrcFun(0x18005, rev=True, initCrc=0xFFFF, xorOut=0x0000)
 
     def connect(self):
-        self.device = hid.device()
-        self.device.open(DP100_USB_INFO["vendor_id"], DP100_USB_INFO["product_id"])
+        try:
+            self.device = hid.device()
+            self.device.open(self.VID, self.PID)
+            self.device.set_nonblocking(0)
+            logger.info("Connected to DP100 device")
+            return True
+        except Exception as e:
+            logger.error(f"Failed to connect to DP100 device: {e}")
+            return False
 
     def disconnect(self):
         if self.device:
-            self.device.close()
+            try:
+                self.device.close()
+                self.device = None
+                logger.info("Disconnected from DP100 device")
+            except Exception as e:
+                logger.error(f"Error disconnecting from DP100 device: {e}")
 
-    def send_frame(self, function_type, data):
-        # self.device.set_nonblocking(0) # Yet to be tested
-        frame = struct.pack("<BBBB", 251, function_type, 0, len(data)) + data
-        checksum = crc16(frame)
-        frame += struct.pack("<H", checksum)
+    def abort_operation(self):
+        self._abort_flag.set()
+
+    def enable_output(self, enable=True):
+        with self._api_lock:
+            self._abort_flag.clear()
+            data = self.gen_set(output=enable, vset=0, iset=0)
+            if self.send_frame(self.OP_BASICSET, data):
+                response = self.receive_frame()
+                if response and response["op"] == self.OP_BASICSET:
+                    set_info = self.parse_basic_set(response["data"])
+                    if set_info and "status" in set_info and set_info["status"] == 1:
+                        logger.info(
+                            f"Output {'enabled' if enable else 'disabled'} successfully"
+                        )
+                        return True
+            logger.error(f"Failed to {'enable' if enable else 'disable'} output")
+            return False
+
+    def gen_frame(self, op_code, data=b""):
+        frame = bytes([self.DR_H2D, op_code & 0xFF, 0x0, len(data) & 0xFF]) + data
+        crc = self.crc16(frame)
+        return frame + bytes([crc & 0xFF, (crc >> 8) & 0xFF])
+
+    def send_frame(self, op_code, data=b""):
+        frame = self.gen_frame(op_code, data)
         logger.debug(f"Sending frame: {frame.hex()}")
-        self.device.write(frame)  # type: ignore
+        try:
+            self.device.write(frame)
+            time.sleep(0.05)  # Wait for device to process
+            return True
+        except Exception as e:
+            logger.error(f"Error sending frame: {e}")
+            return False
 
-    def receive_frame(self):
-        response = self.device.read(64)  # type: ignore
-        response_bytes = bytes(response)  # Convert list of integers to bytes
-        logger.debug(f"Received raw data: {response_bytes.hex()}")
-        if len(response) < 6:
-            return None
-        data_len = response[3]
-        data = bytes(response[4 : 4 + data_len])
-        logger.debug(f"Extracted data: {data.hex()}")
-        return {"function_type": response[1], "data": data}
-
-    def get_basic_info(self):
-        self.send_frame(0x30, b"")
-        response = self.receive_frame()
-        if response and response["function_type"] == 0x30:
-            data = response["data"]
-            logger.debug(f"Basic info data: {data.hex()}")
-            if len(data) == 16:
-                # Unpack the 16 bytes of data
-                unpacked = struct.unpack("<HHHHHHHH", data)
-                return {
-                    "vin": unpacked[0],  # This is already in units of 0.01V
-                    "vout": unpacked[1] / 1000,  # Divide by 1000 to get volts
-                    "iout": unpacked[2] / 1000,  # Divide by 1000 to get amps
-                    "power": unpacked[3] / 100,  # Divide by 100 to get watts
-                    "temp1": unpacked[4] / 10,  # Divide by 10 to get degrees Celsius
-                    "temp2": unpacked[5] / 10,  # Divide by 10 to get degrees Celsius
-                    "dc_5v": unpacked[6] / 1000,  # Divide by 1000 to get volts
-                    "status": unpacked[7],
-                }
-            else:
-                logger.warning(f"Unexpected data length: {len(data)}")
+    def receive_frame(self, timeout_ms=1000):
+        start_time = time.time()
+        while (time.time() - start_time) * 1000 < timeout_ms:
+            if self._abort_flag.is_set():
+                logger.warning("Operation aborted")
                 return None
+            try:
+                response = self.device.read(64, timeout_ms=100)
+                if response:
+                    response_bytes = bytes(response)
+                    logger.debug(f"Received raw data: {response_bytes.hex()}")
+                    return self.check_frame(response_bytes)
+            except Exception as e:
+                logger.error(f"Error receiving frame: {e}")
+            time.sleep(0.01)
+        logger.error("Receive frame timed out")
         return None
 
-    def set_output(self, voltage, current):
-        # TODO: Set write protection to 0
-        # TODO: - might need to pause reading while we set the output
+    def check_frame(self, data):
+        if len(data) < 6:
+            logger.error("Received frame is too short")
+            return None
+        if data[0] == self.DR_D2H:
+            op = data[1]
+            data_len = data[3]
+            if len(data) >= 4 + data_len + 2:
+                if self.crc16(data[0 : 4 + data_len + 2]) == 0:
+                    return {"op": op, "data": data[4 : 4 + data_len]}
+        logger.error("Invalid frame received")
+        return None
 
-        # Set the output voltage and current
-        data = struct.pack(
-            "<BHHHH", 0x20, 1, int(voltage * 1000), int(current * 1000), 0xFFFF
+    def gen_set(self, output=False, vset=0, iset=0, ovp=30500, ocp=5050):
+        data = bytes(
+            [
+                self.SET_MODIFY,
+                1 if output else 0,
+                vset & 0xFF,
+                (vset >> 8) & 0xFF,
+                iset & 0xFF,
+                (iset >> 8) & 0xFF,
+                ovp & 0xFF,
+                (ovp >> 8) & 0xFF,
+                ocp & 0xFF,
+                (ocp >> 8) & 0xFF,
+            ]
         )
-        self.send_frame(0x35, data)
-        response = self.receive_frame()
-        return response and response["data"][0] == 1
+        logger.debug(f"Generated set data: {data.hex()}")
+        return data
 
-    # Add more methods as needed
+    def get_device_info(self):
+        with self._api_lock:
+            self._abort_flag.clear()
+            if self.send_frame(self.OP_DEVICEINFO):
+                response = self.receive_frame()
+                if response and response["op"] == self.OP_DEVICEINFO:
+                    return self.parse_device_info(response["data"])
+        return None
+
+    def get_basic_info(self):
+        with self._api_lock:
+            self._abort_flag.clear()
+            if self.send_frame(self.OP_BASICINFO):
+                response = self.receive_frame()
+                if response and response["op"] == self.OP_BASICINFO:
+                    info = self.parse_basic_info(response["data"])
+                    if info:
+                        logger.debug(
+                            f"Current output state: {info['vout']}V, {info['iout']}A"
+                        )
+                        return info
+                    else:
+                        logger.error("Failed to parse basic info")
+                else:
+                    logger.error("Unexpected or no response for basic info")
+            else:
+                logger.error("Failed to send basic info request")
+        return None
+
+    def set_output(self, voltage, current, max_retries=3):
+        with self._api_lock:
+            self._abort_flag.clear()
+            for attempt in range(max_retries):
+                if self._abort_flag.is_set():
+                    logger.warning("Operation aborted")
+                    return False
+                data = self.gen_set(True, int(voltage * 1000), int(current * 1000))
+                if self.send_frame(self.OP_BASICSET, data):
+                    response = self.receive_frame()
+                    if response and response["op"] == self.OP_BASICSET:
+                        set_info = self.parse_basic_set(response["data"])
+                        if set_info:
+                            if "status" in set_info:
+                                if set_info["status"] == 1:  # Assuming 1 means success
+                                    logger.info(
+                                        f"Output set successfully: {voltage}V, {current}A"
+                                    )
+                                    return True
+                                else:
+                                    logger.error(
+                                        f"Set output failed with status: {set_info['status']}"
+                                    )
+                            elif (
+                                abs(set_info["vo_set"] - voltage) < 0.1
+                                and abs(set_info["io_set"] - current) < 0.1
+                            ):
+                                logger.info(
+                                    f"Output set successfully: {voltage}V, {current}A"
+                                )
+                                return True
+                            else:
+                                logger.error(
+                                    f"Set output values don't match: requested {voltage}V, {current}A, got {set_info['vo_set']}V, {set_info['io_set']}A"
+                                )
+                        else:
+                            logger.error("Failed to parse set output response")
+                    else:
+                        logger.error(
+                            f"Unexpected response type: {response['op'] if response else 'None'}"
+                        )
+                logger.warning(
+                    f"Failed to set output (attempt {attempt + 1}/{max_retries})"
+                )
+                time.sleep(0.5)
+        return False
+
+    def get_settings(self):
+        with self._api_lock:
+            self._abort_flag.clear()
+            if self.send_frame(self.OP_SYSTEMINFO):
+                response = self.receive_frame()
+                if response and response["op"] == self.OP_SYSTEMINFO:
+                    return self.parse_system_info(response["data"])
+        return None
+
+    def set_settings(self, settings):
+        with self._api_lock:
+            self._abort_flag.clear()
+            data = struct.pack(
+                "<BHHHB",
+                settings["backlight"],
+                int(settings["over_power_protection"] * 10),
+                settings["over_temperature_protection"],
+                settings["key_sound"],
+                settings["reverse_protection"],
+            )
+            if self.send_frame(self.OP_SYSTEMINFO, data):
+                response = self.receive_frame()
+                if response and response["op"] == self.OP_SYSTEMINFO:
+                    return True
+        return False
+
+    def parse_device_info(self, data):
+        return {
+            "dev_type": data[0:15].split(b"\x00")[0].decode("utf-8"),
+            "hdw_ver": (data[17] << 8 | data[16]) / 10,
+            "app_ver": (data[19] << 8 | data[18]) / 10,
+            "boot_ver": (data[21] << 8 | data[20]) / 10,
+            "year": (data[37] << 8 | data[36]),
+            "month": data[38],
+            "day": data[39],
+        }
+
+    def parse_basic_info(self, data):
+        if len(data) < 16:
+            logger.error(f"Insufficient data for basic info: {len(data)} bytes")
+            return None
+        return {
+            "vin": (data[1] << 8 | data[0]) / 1000,
+            "vout": (data[3] << 8 | data[2]) / 1000,
+            "iout": (data[5] << 8 | data[4]) / 1000,
+            "vo_max": (data[7] << 8 | data[6]) / 1000,
+            "temp1": (data[9] << 8 | data[8]) / 10,
+            "temp2": (data[11] << 8 | data[10]) / 10,
+            "dc_5v": (data[13] << 8 | data[12]) / 1000,
+            "out_mode": data[14],
+            "work_st": data[15],
+        }
+
+    def parse_basic_set(self, data):
+        if len(data) == 1:
+            # The device is sending a status byte
+            status = data[0]
+            logger.info(f"Set output status: {status}")
+            return {"status": status}
+        elif len(data) >= 10:
+            try:
+                return {
+                    "index": data[0],
+                    "state": data[1],
+                    "vo_set": (data[3] << 8 | data[2]) / 1000,
+                    "io_set": (data[5] << 8 | data[4]) / 1000,
+                    "ovp_set": (data[7] << 8 | data[6]) / 1000,
+                    "ocp_set": (data[9] << 8 | data[8]) / 1000,
+                }
+            except IndexError as e:
+                logger.error(f"Error parsing basic set data: {e}")
+                return None
+        else:
+            logger.error(f"Insufficient data for basic set: {len(data)} bytes")
+            return None
+
+    def parse_system_info(self, data):
+        return {
+            "backlight": data[0],
+            "over_power_protection": (data[2] << 8 | data[1]) / 10,
+            "over_temperature_protection": (data[4] << 8 | data[3]),
+            "key_sound": data[5],
+            "reverse_protection": bool(data[6] & 0x01),
+            "power_on_state": bool(data[6] & 0x02),
+        }
+
+
+if __name__ == "__main__":
+    # Test the implementation
+    dp100 = DP100()
+    try:
+        if dp100.connect():
+            print("Device Info:", dp100.get_device_info())
+            print("Basic Info:", dp100.get_basic_info())
+            print("Settings:", dp100.get_settings())
+
+            # Test setting output
+            test_voltage = 5.0  # 5V
+            test_current = 1.0  # 1A
+            print(f"Setting output to {test_voltage}V, {test_current}A")
+            result = dp100.set_output(test_voltage, test_current)
+            print("Set output result:", result)
+
+            time.sleep(1)  # Wait for the change to take effect
+
+            print("Updated Basic Info:", dp100.get_basic_info())
+        else:
+            print("Failed to connect to the device")
+    except Exception as e:
+        print(f"An error occurred: {e}")
+    finally:
+        dp100.disconnect()
